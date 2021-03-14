@@ -45,8 +45,8 @@ architecture Behavioral of datapath is
         	i_clk : in STD_LOGIC;
             i_rst : in STD_LOGIC;
             i_load : in STD_LOGIC;
-            i_data : in STD_LOGIC_VECTOR(3 downto 0);
-            o_data : out STD_LOGIC_VECTOR(3 downto 0)
+            i_data : in STD_LOGIC_VECTOR(7 downto 0);
+            o_data : out STD_LOGIC_VECTOR(7 downto 0)
         );
     end component reg_8_bit;
     
@@ -55,8 +55,8 @@ architecture Behavioral of datapath is
         	i_clk : in STD_LOGIC;
             i_rst : in STD_LOGIC;
             i_load : in STD_LOGIC;
-            i_data : in STD_LOGIC_VECTOR(3 downto 0);
-            o_data : out STD_LOGIC_VECTOR(3 downto 0)
+            i_data : in STD_LOGIC_VECTOR(15 downto 0);
+            o_data : out STD_LOGIC_VECTOR(15 downto 0)
         );
     end component reg_16_bit;
 	
@@ -66,7 +66,7 @@ architecture Behavioral of datapath is
 		i_rst : in STD_LOGIC;
 		i_load : in STD_LOGIC;
 		i_data : in STD_LOGIC_VECTOR(7 downto 0);
-		o_data : out STD_LOGIC_VECTOR(7 downto 0)
+		o_data : out STD_LOGIC_VECTOR(8 downto 0)
 	  );
 	end component reg_sll_8_bit;
 	
@@ -123,15 +123,15 @@ architecture Behavioral of datapath is
 	signal min_comp_out : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
     signal min_value : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
     signal delta_value : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
-	signal shift_level_calc_out: STD_LOGIC_VECTOR(7 downto 0) := "00000000";
-    signal shift_level : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
+	signal shift_level_calc_out: STD_LOGIC_VECTOR(3 downto 0) := "0000";
+    signal shift_level : STD_LOGIC_VECTOR(3 downto 0) := "0000";
 	signal shift_count : STD_LOGIC_VECTOR(3 downto 0) := "0000";
 	signal temp_value_sub : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
-	signal temp_value : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
+	signal temp_value : STD_LOGIC_VECTOR(8 downto 0) := "000000000";
 
 begin
 	
-    n_col_reg : reg_8_bit port map(
+    N_COL_REG : reg_8_bit port map(
     	i_clk => i_clk,
         i_rst => i_rst,
         i_load => n_col_load,
@@ -141,7 +141,7 @@ begin
 	
 	size_prod <= n_col * i_data;
 	
-	size_reg : reg_16_bit port map(
+	SIZE_REG : reg_16_bit port map(
 		i_clk => i_clk,
 		i_rst => i_rst,
 		i_load => size_load,
@@ -149,7 +149,7 @@ begin
 		o_data => size
 	);
 	
-	pixel_counter : counter_16_bit port map(
+	PIXEL_COUNTER : counter_16_bit port map(
 		i_clk => i_clk,
 		i_rst => pixel_counter_rst,
 		i_en => pixel_counter_en,
@@ -162,7 +162,7 @@ begin
 	
 	address_11 <= address_10 + size;
 	
-	address_mux : mux_4_1_16_bit port map(
+	ADDRESS_MUX : mux_4_1_16_bit port map(
 		i_sel => address_sel,
 		i_data_00 => address_00,
 		i_data_01 => address_01,
@@ -171,7 +171,7 @@ begin
 		o_data => o_address
 	);
 	
-	max_value_mux : mux_2_1_8_bit port map(
+	MAX_VALUE_MUX : mux_2_1_8_bit port map(
 		i_sel => max_value_sel,
 		i_data_0 => "00000000",
 		i_data_1 => i_data,
@@ -180,7 +180,7 @@ begin
 	
 	max_comp_out <= max_comp_in when max_comp_in > max_value else max_value;
 	
-	max_value_reg : reg_8_bit port map(
+	MAX_VALUE_REG : reg_8_bit port map(
 		i_clk => i_clk,
 		i_rst => i_rst,
 		i_load => max_value_load,
@@ -188,7 +188,7 @@ begin
 		o_data => max_value
 	);
 	
-	min_value_mux : mux_2_1_8_bit port map(
+	MIN_VALUE_MUX : mux_2_1_8_bit port map(
 		i_sel => min_value_sel,
 		i_data_0 => "11111111",
 		i_data_1 => i_data,
@@ -197,7 +197,7 @@ begin
 	
 	min_comp_out <= min_comp_in when min_comp_in < min_value else min_value;			 
 	
-	min_value_reg : reg_8_bit port map(
+	MIN_VALUE_REG : reg_8_bit port map(
 		i_clk => i_clk,
 		i_rst => i_rst,
 		i_load => min_value_load,
@@ -207,7 +207,7 @@ begin
 	
 	delta_value <= max_value - min_value;
 	
-	shift_level_calc : process(delta_value)
+	SHIFT_LEVEL_CALC : process(delta_value)
     begin
         if (delta_value = "00000000") then
             shift_level_calc_out <= "1000";
@@ -230,7 +230,7 @@ begin
         end if;
     end process;
 	
-	shift_level_reg : reg_4_bit port map(
+	SHIFT_LEVEL_REG : reg_4_bit port map(
 		i_clk => i_clk,
 		i_rst => i_rst,
 		i_load => shift_level_load,
@@ -238,7 +238,7 @@ begin
 		o_data => shift_level
 	);
 	
-	shift_counter : counter_4_bit port map(
+	SHIFT_COUNTER : counter_4_bit port map(
 		i_clk => i_clk,
 		i_rst => shift_counter_rst,
 		i_en => shift_counter_en,
@@ -247,7 +247,7 @@ begin
 	
 	temp_value_sub <= i_data - min_value;
 	
-	temp_value_reg : reg_sll_8_bit port map(
+	TEMP_VALUE_REG : reg_sll_8_bit port map(
 		i_clk => i_clk,
 		i_rst => i_rst,
 		i_load => temp_value_load,
