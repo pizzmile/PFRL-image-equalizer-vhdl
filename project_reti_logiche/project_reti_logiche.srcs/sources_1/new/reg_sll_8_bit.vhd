@@ -9,24 +9,25 @@ entity reg_sll_8_bit is
     i_rst : in STD_LOGIC;
     i_load : in STD_LOGIC;
     i_data : in STD_LOGIC_VECTOR(7 downto 0);
-    o_data : out STD_LOGIC_VECTOR(7 downto 0)
+    o_data : out STD_LOGIC_VECTOR(8 downto 0)
   );
 end reg_sll_8_bit;
 
 architecture Behavioral of reg_sll_8_bit is
-	signal data : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
+	signal data : STD_LOGIC_VECTOR(8 downto 0) := "000000000";
 begin
     
     -- logica di controllo del registro
 	reg : process(i_clk, i_rst)
     begin
     	if (i_rst = '1') then 
-        	data <= "00000000"; 
+        	data <= "000000000"; 
         elsif (i_clk'event and i_clk = '1') then 
         	if (i_load = '1') then
-            	data <= i_data;
+        	   data(8) <= '0';
+            	data(7 downto 0) <= i_data;
             elsif (i_load = '0') then
-            	data(7 downto 1) <= data(6 downto 0);
+            	data(8 downto 1) <= data(7 downto 0);
                 data(0) <= '0';
             end if;
         end if; 
