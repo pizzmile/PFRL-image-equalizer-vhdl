@@ -20,14 +20,14 @@ begin
     -- logica di controllo del registro
 	reg : process(i_clk, i_rst)
     begin
-    	if (i_rst = ’1’) then 
-        	data <= ”00000000”; 
-        elsif (i_clk’event and CLK = '1') then 
+    	if (i_rst = '1') then 
+        	data <= "00000000"; 
+        elsif (i_clk'event and i_clk = '1') then 
         	if (i_load = '1') then
             	data <= i_data;
             elsif (i_load = '0') then
             	data(7 downto 1) <= data(6 downto 0);
-                data(0) = '0';
+                data(0) <= '0';
             end if;
         end if; 
     end process;

@@ -8,7 +8,7 @@ entity counter_4_bit is
   	i_clk : in STD_LOGIC;
     i_rst : in STD_LOGIC;
     i_en : in STD_LOGIC;
-    o_data : out STD_LOGIC_VECTOR(3 downto 0);
+    o_data : out STD_LOGIC_VECTOR(3 downto 0)
   );
 end counter_4_bit;
 
@@ -21,9 +21,9 @@ begin
     -- logica di controllo
     counter : process(i_clk, i_rst, i_en)
     begin
-    	if (i_rst = ’1’) then 
-        	data <= ”0000”; 
-        elsif (i_clk’event and CLK = '1') then 
+    	if (i_rst = '1') then 
+        	data <= "0000"; 
+        elsif (i_clk'event and i_clk = '1') then 
         	if (i_en = '1') then
             	data <= data + "0001";
             end if;

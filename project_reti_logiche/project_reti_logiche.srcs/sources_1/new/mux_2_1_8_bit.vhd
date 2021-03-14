@@ -8,7 +8,7 @@ entity mux_2_1_8_bit is
   	i_sel : in STD_LOGIC;
     i_data_0 : in STD_LOGIC_VECTOR(7 downto 0);
     i_data_1 : in STD_LOGIC_VECTOR(7 downto 0);
-    o_data : out STD_LOGIC_VECTOR(7 downto 0);
+    o_data : out STD_LOGIC_VECTOR(7 downto 0)
   );
 end mux_2_1_8_bit;
 
