@@ -212,7 +212,7 @@ begin
 		size_load <= '0';
 		pixel_counter_rst <= '0';
 		pixel_counter_en <= '0';
-		address_sel <= "00";
+		-- address_sel <= "00";
 		max_value_sel <= '0';
 		max_value_load <= '0';
 		min_value_sel <= '0';
@@ -232,13 +232,15 @@ begin
                 shift_counter_rst <= '1';
                 shift_counter_en <= '1';
             when REQ_N_COL =>
+                address_sel <= "00";
+                o_en <= '1';
             when READ_N_COL =>
+                address_sel <= "00";
                 n_col_load <= '1';
             when REQ_N_RIG =>
                 address_sel <= "01";
             when READ_N_RIG =>
                 address_sel <= "01";
-                n_col_load <= '1';
                 size_load <= '1';
             when INIT_COMP =>
                 pixel_counter_en <= '1';

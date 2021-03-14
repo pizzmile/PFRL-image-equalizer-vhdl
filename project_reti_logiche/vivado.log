@@ -1,0 +1,1301 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Mar 14 15:22:17 2021
+# Process ID: 12404
+# Current directory: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4260 C:\Users\andre\Documents\GitHub\PFRL_pizzamiglio_prisciantelli\project_reti_logiche\project_reti_logiche.xpr
+# Log file: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/vivado.log
+# Journal file: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche'
+INFO: [Project 1-313] Project file moved from 'C:/Users/User/OneDrive - Politecnico di Milano/Documenti/GitHub/prova_finale_reti_logiche/project_reti_logiche' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.gen/sources_1', nor could it be found using path 'C:/Users/User/OneDrive - Politecnico di Milano/Documenti/GitHub/prova_finale_reti_logiche/project_reti_logiche/project_reti_logiche.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/counter_16_bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_16_bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/counter_4_bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_4_bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'datapath'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/mux_2_1_8_bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux_2_1_8_bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/mux_4_1_16_bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux_4_1_16_bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/reg_16_bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg_16_bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/reg_4_bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg_4_bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/reg_8_bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg_8_bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/reg_sll_8_bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg_sll_8_bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/ProgettoREL/tb_2x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.reg_8_bit [reg_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_16_bit [reg_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_16_bit [counter_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4_1_16_bit [mux_4_1_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2_1_8_bit [mux_2_1_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_4_bit [reg_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_4_bit [counter_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_sll_8_bit [reg_sll_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_behav -key {Behavioral:sim_1:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source project_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1018.766 ; gain = 0.000
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 227
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Stopped at time : 0 fs : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 227
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1018.766 ; gain = 0.000
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 236
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 227
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+Stopped at time : 367500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 236
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.reg_8_bit [reg_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_16_bit [reg_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_16_bit [counter_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4_1_16_bit [mux_4_1_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2_1_8_bit [mux_2_1_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_4_bit [reg_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_4_bit [counter_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_sll_8_bit [reg_sll_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+WARNING: [Simulator 45-24] Previous breakpoint at line 236 in file 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd' not restored because it is no longer a breakable line.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1018.766 ; gain = 0.000
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 227
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Stopped at time : 0 fs : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 227
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1018.766 ; gain = 0.000
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 235
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 227
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+Stopped at time : 352500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 235
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 235
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 227
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.reg_8_bit [reg_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_16_bit [reg_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_16_bit [counter_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4_1_16_bit [mux_4_1_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2_1_8_bit [mux_2_1_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_4_bit [reg_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_4_bit [counter_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_sll_8_bit [reg_sll_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Stopped at time : 0 fs : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 227
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1018.766 ; gain = 0.000
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 235
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 227
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+Stopped at time : 352500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 235
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 235
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1018.766 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1018.766 ; gain = 0.000
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1752.520 ; gain = 0.000
+run 100 ns
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1752.520 ; gain = 0.000
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 235
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Stopped at time : 352500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 235
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1752.520 ; gain = 0.000
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 237
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 235
+run 100 ns
+Stopped at time : 367500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 237
+run 100 ns
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'datapath'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.reg_8_bit [reg_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_16_bit [reg_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_16_bit [counter_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4_1_16_bit [mux_4_1_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2_1_8_bit [mux_2_1_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_4_bit [reg_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_4_bit [counter_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_sll_8_bit [reg_sll_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Stopped at time : 367500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 237
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1752.520 ; gain = 0.000
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 239
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 237
+run 100 ns
+Stopped at time : 382500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 239
+run 100 ns
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Time resolution is 1 ps
+INFO: [Common 17-344] 'relaunch_xsim_kernel' was cancelled
+INFO: [Common 17-344] 'relaunch_sim' was cancelled
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 239
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 237
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Stopped at time : 367500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 237
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1752.520 ; gain = 0.000
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 237
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 239
+run all
+Stopped at time : 382500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 239
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 241
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 239
+run all
+Stopped at time : 397500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 241
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 241
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 245
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 241
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 245
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.reg_8_bit [reg_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_16_bit [reg_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_16_bit [counter_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4_1_16_bit [mux_4_1_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2_1_8_bit [mux_2_1_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_4_bit [reg_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_4_bit [counter_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_sll_8_bit [reg_sll_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Stopped at time : 397500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 241
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1752.520 ; gain = 0.000
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 241
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 244
+run all
+Stopped at time : 412500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 244
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 244
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 247
+run all
+Stopped at time : 427500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 247
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 254
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 247
+run all
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1752.520 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1752.520 ; gain = 0.000
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 254
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1752.520 ; gain = 0.000
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 235
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/ProgettoREL/tb_2x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.reg_8_bit [reg_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_16_bit [reg_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_16_bit [counter_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4_1_16_bit [mux_4_1_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2_1_8_bit [mux_2_1_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_4_bit [reg_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_4_bit [counter_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_sll_8_bit [reg_sll_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Stopped at time : 352500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 235
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1752.520 ; gain = 0.000
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 237
+run all
+Stopped at time : 367500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 237
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 235
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 239
+run all
+Stopped at time : 382500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 239
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 237
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 241
+run all
+Stopped at time : 397500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 241
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 244
+run all
+Stopped at time : 412500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 244
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.reg_8_bit [reg_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_16_bit [reg_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_16_bit [counter_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4_1_16_bit [mux_4_1_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2_1_8_bit [mux_2_1_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_4_bit [reg_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_4_bit [counter_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_sll_8_bit [reg_sll_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+ERROR: [Simulator 45-7] No such file 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhdC:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd' in the design.
+ERROR: [Common 17-69] Command failed: ERROR: [Simulator 45-7] No such file 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhdC:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd' in the design.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+ERROR: [Simulator 45-7] No such file 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhdC:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd' in the design.
+ERROR: [Common 17-69] Command failed: ERROR: [Simulator 45-7] No such file 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhdC:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd' in the design.
+
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 239
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1752.520 ; gain = 0.000
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 239
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Stopped at time : 382500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 239
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1752.520 ; gain = 0.000
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 241
+run all
+Stopped at time : 397500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 241
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 244
+run all
+Stopped at time : 412500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 244
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 247
+run all
+Stopped at time : 427500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 247
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 254
+run all
+run: Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1752.520 ; gain = 0.000
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 247
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 244
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 241
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 254
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Stopped at time : 382500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 239
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1752.520 ; gain = 0.000
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 241
+run all
+Stopped at time : 397500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 241
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 244
+run all
+Stopped at time : 412500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 244
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 247
+run all
+Stopped at time : 427500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 247
+run all
+run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1752.520 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+ERROR: [Simulator 45-7] No such file 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhdC:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd' in the design.
+ERROR: [Common 17-69] Command failed: ERROR: [Simulator 45-7] No such file 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhdC:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd' in the design.
+
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 239
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1752.520 ; gain = 0.000
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 235
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.reg_8_bit [reg_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_16_bit [reg_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_16_bit [counter_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4_1_16_bit [mux_4_1_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2_1_8_bit [mux_2_1_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_4_bit [reg_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_4_bit [counter_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_sll_8_bit [reg_sll_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Stopped at time : 352500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 235
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1752.520 ; gain = 0.000
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 239
+run all
+Stopped at time : 367500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 239
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 244
+run all
+Stopped at time : 382500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 244
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 244
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 239
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 235
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 235
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.reg_8_bit [reg_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_16_bit [reg_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_16_bit [counter_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4_1_16_bit [mux_4_1_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2_1_8_bit [mux_2_1_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_4_bit [reg_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_4_bit [counter_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_sll_8_bit [reg_sll_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Stopped at time : 352500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 235
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1752.520 ; gain = 0.000
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 239
+run all
+Stopped at time : 367500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 239
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 244
+run all
+Stopped at time : 382500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 244
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 249
+run all
+Stopped at time : 397500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 249
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 255
+run all
+Stopped at time : 412500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 255
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 258
+run all
+Stopped at time : 427500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 258
+add_bp {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} 265
+run all
+run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1752.520 ; gain = 0.000
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 265
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 258
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 255
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 249
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 244
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 239
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Stopped at time : 352500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 235
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1752.520 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Stopped at time : 352500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 235
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1752.520 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.reg_8_bit [reg_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_16_bit [reg_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_16_bit [counter_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4_1_16_bit [mux_4_1_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2_1_8_bit [mux_2_1_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_4_bit [reg_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_4_bit [counter_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_sll_8_bit [reg_sll_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Stopped at time : 352500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" Line 235
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1752.520 ; gain = 0.000
+remove_bps -file {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd} -line 235
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.reg_8_bit [reg_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_16_bit [reg_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_16_bit [counter_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4_1_16_bit [mux_4_1_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2_1_8_bit [mux_2_1_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_4_bit [reg_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_4_bit [counter_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_sll_8_bit [reg_sll_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1752.520 ; gain = 0.000
+update_compile_order -fileset sources_1
