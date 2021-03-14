@@ -1,0 +1,11 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/OneDrive - Politecnico di Milano/Documenti/GitHub/prova_finale_reti_logiche/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/project_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_16_bit'
+INFO: [VRFC 10-3107] analyzing entity 'counter_4_bit'
+INFO: [VRFC 10-3107] analyzing entity 'reg_16_bit'
+INFO: [VRFC 10-3107] analyzing entity 'reg_4_bit'
+INFO: [VRFC 10-3107] analyzing entity 'reg_8_bit'
+INFO: [VRFC 10-3107] analyzing entity 'reg_8_bit_0'
+INFO: [VRFC 10-3107] analyzing entity 'reg_8_bit_h'
+INFO: [VRFC 10-3107] analyzing entity 'reg_sll_8_bit'
+INFO: [VRFC 10-3107] analyzing entity 'datapath'
+INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'

@@ -17,7 +17,7 @@ Compiling architecture behavioral of entity xil_defaultlib.reg_8_bit [reg_8_bit_
 Compiling architecture behavioral of entity xil_defaultlib.reg_16_bit [reg_16_bit_default]
 Compiling architecture behavioral of entity xil_defaultlib.counter_16_bit [counter_16_bit_default]
 Compiling architecture behavioral of entity xil_defaultlib.mux_4_1_16_bit [mux_4_1_16_bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.mux_2_1_8_bit [mux_2_1_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_8_bit_h [reg_8_bit_h_default]
 Compiling architecture behavioral of entity xil_defaultlib.reg_4_bit [reg_4_bit_default]
 Compiling architecture behavioral of entity xil_defaultlib.counter_4_bit [counter_4_bit_default]
 Compiling architecture behavioral of entity xil_defaultlib.reg_sll_8_bit [reg_sll_8_bit_default]

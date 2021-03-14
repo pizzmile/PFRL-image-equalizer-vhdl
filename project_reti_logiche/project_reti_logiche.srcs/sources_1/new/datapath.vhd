@@ -29,7 +29,95 @@ entity datapath is
 end datapath;
 
 architecture Behavioral of datapath is
-
+	
+    component reg_4_bit is
+    	port (
+        	i_clk : in STD_LOGIC;
+            i_rst : in STD_LOGIC;
+            i_load : in STD_LOGIC;
+            i_data : in STD_LOGIC_VECTOR(3 downto 0);
+            o_data : out STD_LOGIC_VECTOR(3 downto 0)
+        );
+    end component reg_4_bit;
+    
+    component reg_8_bit is
+    	port (
+        	i_clk : in STD_LOGIC;
+            i_rst : in STD_LOGIC;
+            i_load : in STD_LOGIC;
+            i_data : in STD_LOGIC_VECTOR(7 downto 0);
+            o_data : out STD_LOGIC_VECTOR(7 downto 0)
+        );
+    end component reg_8_bit;
+    
+    component reg_8_bit_h is
+    	port (
+        	i_clk : in STD_LOGIC;
+            i_rst : in STD_LOGIC;
+            i_load : in STD_LOGIC;
+            i_data : in STD_LOGIC_VECTOR(7 downto 0);
+            o_data : out STD_LOGIC_VECTOR(7 downto 0)
+        );
+    end component reg_8_bit_h;
+    
+    component reg_16_bit is
+    	port (
+        	i_clk : in STD_LOGIC;
+            i_rst : in STD_LOGIC;
+            i_load : in STD_LOGIC;
+            i_data : in STD_LOGIC_VECTOR(15 downto 0);
+            o_data : out STD_LOGIC_VECTOR(15 downto 0)
+        );
+    end component reg_16_bit;
+	
+	component reg_sll_8_bit is
+	  Port ( 
+		i_clk : in STD_LOGIC;
+		i_rst : in STD_LOGIC;
+		i_load : in STD_LOGIC;
+		i_data : in STD_LOGIC_VECTOR(7 downto 0);
+		o_data : out STD_LOGIC_VECTOR(8 downto 0)
+	  );
+	end component reg_sll_8_bit;
+	
+	component mux_2_1_8_bit is
+	  Port (
+		i_sel : in STD_LOGIC;
+		i_data_0 : in STD_LOGIC_VECTOR(7 downto 0);
+		i_data_1 : in STD_LOGIC_VECTOR(7 downto 0);
+		o_data : out STD_LOGIC_VECTOR(7 downto 0)
+	  );
+	end component mux_2_1_8_bit;
+	
+	component mux_4_1_16_bit is
+	  Port (
+		i_sel : in STD_LOGIC_VECTOR(1 downto 0);
+		i_data_00 : in STD_LOGIC_VECTOR(15 downto 0);
+		i_data_01 : in STD_LOGIC_VECTOR(15 downto 0);
+		i_data_10 : in STD_LOGIC_VECTOR(15 downto 0);
+		i_data_11 : in STD_LOGIC_VECTOR(15 downto 0);
+		o_data : out STD_LOGIC_VECTOR(15 downto 0)
+	  );
+	end component mux_4_1_16_bit;
+	
+	component counter_4_bit is
+	  Port (
+		i_clk : in STD_LOGIC;
+		i_rst : in STD_LOGIC;
+		i_en : in STD_LOGIC;
+		o_data : out STD_LOGIC_VECTOR(3 downto 0)
+	  );
+	end component counter_4_bit;
+	
+	component counter_16_bit is
+	  Port (
+		i_clk : in STD_LOGIC;
+		i_rst : in STD_LOGIC;
+		i_en : in STD_LOGIC;
+		o_data : out STD_LOGIC_VECTOR(15 downto 0)
+	  );
+	end component counter_16_bit;
+    
     signal n_col : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
     signal size_prod : STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
     signal size : STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
@@ -53,29 +141,23 @@ architecture Behavioral of datapath is
 
 begin
 	
-    N_COL_REG : process(i_clk, i_rst, n_col_load)
-        begin
-            if (i_rst = '1') then 
-                n_col <= "00000000"; 
-            elsif (i_clk'event and i_clk = '1') then 
-                if (n_col_load = '1') then
-                    n_col <= i_data;
-                end if;
-            end if;
-        end process;
+    N_COL_REG : reg_8_bit port map(
+    	i_clk => i_clk,
+        i_rst => i_rst,
+        i_load => n_col_load,
+        i_data => i_data,
+        o_data => n_col
+    );
 	
 	size_prod <= n_col * i_data;
 	
-	SIZE_REG : process(i_clk, i_rst, size_load)
-        begin
-            if (i_rst = '1') then 
-                size <= "00000000"; 
-            elsif (i_clk'event and i_clk = '1') then 
-                if (size_load = '1') then
-                    size <= size_prod;
-                end if;
-            end if;
-        end process;
+	SIZE_REG : reg_16_bit port map(
+		i_clk => i_clk,
+		i_rst => i_rst,
+		i_load => size_load,
+		i_data => size_prod,
+		o_data => size
+	);
 	
 	PIXEL_COUNTER : counter_16_bit port map(
 		i_clk => i_clk,
@@ -88,7 +170,7 @@ begin
 	
 	address_10 <= pixel_count + "0000000000000010";
 	
-	address_11 <= address_10 + size;
+	address_11 <= address_10 + size - "0000000000000001";
 	
 	ADDRESS_MUX : mux_4_1_16_bit port map(
 		i_sel => address_sel,
@@ -99,14 +181,7 @@ begin
 		o_data => o_address
 	);
 	
-	MAX_VALUE_MUX : mux_2_1_8_bit port map(
-		i_sel => max_value_sel,
-		i_data_0 => "00000000",
-		i_data_1 => i_data,
-		o_data => max_comp_in
-	);
-	
-	max_comp_out <= max_comp_in when max_comp_in > max_value else max_value;
+	max_comp_out <= i_data when i_data > max_value else max_value;
 	
 	MAX_VALUE_REG : reg_8_bit port map(
 		i_clk => i_clk,
@@ -116,16 +191,9 @@ begin
 		o_data => max_value
 	);
 	
-	MIN_VALUE_MUX : mux_2_1_8_bit port map(
-		i_sel => min_value_sel,
-		i_data_0 => "11111111",
-		i_data_1 => i_data,
-		o_data => min_comp_in
-	);
+	min_comp_out <= i_data when i_data < min_value else min_value;			 
 	
-	min_comp_out <= min_comp_in when min_comp_in < min_value else min_value;			 
-	
-	MIN_VALUE_REG : reg_8_bit port map(
+	MIN_VALUE_REG : reg_8_bit_h port map(
 		i_clk => i_clk,
 		i_rst => i_rst,
 		i_load => min_value_load,
@@ -172,6 +240,8 @@ begin
 		i_en => shift_counter_en,
 		o_data => shift_count
 	);
+	
+	shift_counter_end <= '1' when shift_count = shift_level else '0';
 	
 	temp_value_sub <= i_data - min_value;
 	

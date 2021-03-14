@@ -1,0 +1,5 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Failure: Simulation Ended! TEST PASSATO
+Time: 947500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/User/OneDrive - Politecnico di Milano/Documenti/GitHub/prova_finale_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/ProgettoREL/tb_2x2.vhd
+$finish called at time : 947500 ps : File "C:/Users/User/OneDrive - Politecnico di Milano/Documenti/GitHub/prova_finale_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/ProgettoREL/tb_2x2.vhd" Line 113
