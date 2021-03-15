@@ -204,7 +204,7 @@ begin
 	delta_value <= max_value - min_value;
 	
 	SHIFT_LEVEL_CALC : process(delta_value)
-    begin
+    begin 
         if (delta_value = "00000000") then
             shift_level_calc_out <= "1000";
         elsif ("00000000" < delta_value and delta_value < "00000011") then
@@ -223,6 +223,8 @@ begin
             shift_level_calc_out <= "0001";
         elsif (delta_value = "11111111") then
             shift_level_calc_out <= "0000";
+        else 
+            shift_level_calc_out <= "XXXX";
         end if;
     end process;
 	
