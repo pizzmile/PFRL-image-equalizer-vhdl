@@ -1,7 +1,7 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
 "project_tb_func_synth.vhd" \
-"../../../../../project_reti_logiche.srcs/sim_1/imports/ProgettoREL/tb_2x2.vhd" \
+"../../../../../../Testbench/TB_Salice/Generatore test/multipleTests.vhd" \
 
 # Do not sort compile order
 nosort

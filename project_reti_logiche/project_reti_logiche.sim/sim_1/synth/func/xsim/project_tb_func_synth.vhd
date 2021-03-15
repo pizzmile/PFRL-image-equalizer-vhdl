@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Sun Mar 14 17:41:43 2021
--- Host        : DESKTOP-HESL505 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -mode funcsim -nolib -force -file {C:/Users/User/OneDrive - Politecnico di
---               Milano/Documenti/GitHub/prova_finale_reti_logiche/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/project_tb_func_synth.vhd}
+-- Date        : Mon Mar 15 17:50:56 2021
+-- Host        : DESKTOP-D7FT5L0 running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -mode funcsim -nolib -force -file
+--               C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/project_tb_func_synth.vhd
 -- Design      : project_reti_logiche
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -17,12 +17,12 @@ use UNISIM.VCOMPONENTS.ALL;
 entity counter_16_bit is
   port (
     data_reg : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    S : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \data_reg[11]_0\ : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    S : out STD_LOGIC_VECTOR ( 3 downto 0 );
     \data_reg[14]_0\ : out STD_LOGIC_VECTOR ( 0 to 0 );
+    \data_reg[1]_0\ : out STD_LOGIC_VECTOR ( 0 to 0 );
     CLK : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    \eqOp_carry__0\ : in STD_LOGIC_VECTOR ( 11 downto 0 )
+    \eqOp_carry__0\ : in STD_LOGIC_VECTOR ( 14 downto 0 )
   );
 end counter_16_bit;
 
@@ -343,11 +343,11 @@ begin
     )
         port map (
       I0 => \^data_reg\(14),
-      I1 => \eqOp_carry__0\(11),
-      I2 => \eqOp_carry__0\(9),
-      I3 => \^data_reg\(12),
-      I4 => \eqOp_carry__0\(10),
-      I5 => \^data_reg\(13),
+      I1 => \eqOp_carry__0\(14),
+      I2 => \eqOp_carry__0\(13),
+      I3 => \^data_reg\(13),
+      I4 => \eqOp_carry__0\(12),
+      I5 => \^data_reg\(12),
       O => \data_reg[14]_0\(0)
     );
 eqOp_carry_i_1: unisim.vcomponents.LUT6
@@ -355,13 +355,13 @@ eqOp_carry_i_1: unisim.vcomponents.LUT6
       INIT => X"9009000000009009"
     )
         port map (
-      I0 => \^data_reg\(11),
-      I1 => \eqOp_carry__0\(8),
-      I2 => \eqOp_carry__0\(7),
-      I3 => \^data_reg\(10),
-      I4 => \eqOp_carry__0\(6),
+      I0 => \^data_reg\(10),
+      I1 => \eqOp_carry__0\(10),
+      I2 => \eqOp_carry__0\(11),
+      I3 => \^data_reg\(11),
+      I4 => \eqOp_carry__0\(9),
       I5 => \^data_reg\(9),
-      O => \data_reg[11]_0\(2)
+      O => S(3)
     );
 eqOp_carry_i_2: unisim.vcomponents.LUT6
     generic map(
@@ -369,12 +369,12 @@ eqOp_carry_i_2: unisim.vcomponents.LUT6
     )
         port map (
       I0 => \^data_reg\(7),
-      I1 => \eqOp_carry__0\(4),
-      I2 => \eqOp_carry__0\(5),
-      I3 => \^data_reg\(8),
-      I4 => \eqOp_carry__0\(3),
-      I5 => \^data_reg\(6),
-      O => \data_reg[11]_0\(1)
+      I1 => \eqOp_carry__0\(7),
+      I2 => \eqOp_carry__0\(6),
+      I3 => \^data_reg\(6),
+      I4 => \eqOp_carry__0\(8),
+      I5 => \^data_reg\(8),
+      O => S(2)
     );
 eqOp_carry_i_3: unisim.vcomponents.LUT6
     generic map(
@@ -382,12 +382,25 @@ eqOp_carry_i_3: unisim.vcomponents.LUT6
     )
         port map (
       I0 => \^data_reg\(4),
-      I1 => \eqOp_carry__0\(1),
-      I2 => \eqOp_carry__0\(2),
+      I1 => \eqOp_carry__0\(4),
+      I2 => \eqOp_carry__0\(5),
       I3 => \^data_reg\(5),
-      I4 => \eqOp_carry__0\(0),
+      I4 => \eqOp_carry__0\(3),
       I5 => \^data_reg\(3),
-      O => \data_reg[11]_0\(0)
+      O => S(1)
+    );
+eqOp_carry_i_4: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"9009000000009009"
+    )
+        port map (
+      I0 => \^data_reg\(2),
+      I1 => \eqOp_carry__0\(2),
+      I2 => \eqOp_carry__0\(1),
+      I3 => \^data_reg\(1),
+      I4 => \^data_reg\(0),
+      I5 => \eqOp_carry__0\(0),
+      O => S(0)
     );
 plusOp_carry_i_1: unisim.vcomponents.LUT1
     generic map(
@@ -395,7 +408,7 @@ plusOp_carry_i_1: unisim.vcomponents.LUT1
     )
         port map (
       I0 => \^data_reg\(1),
-      O => S(0)
+      O => \data_reg[1]_0\(0)
     );
 end STRUCTURE;
 library IEEE;
@@ -416,10 +429,10 @@ architecture STRUCTURE of counter_4_bit is
   signal shift_counter_en : STD_LOGIC;
   signal shift_counter_rst : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \data[0]_i_1__0\ : label is "soft_lutpair24";
-  attribute SOFT_HLUTNM of \data[1]_i_1\ : label is "soft_lutpair24";
-  attribute SOFT_HLUTNM of \data[2]_i_1\ : label is "soft_lutpair23";
-  attribute SOFT_HLUTNM of \data[3]_i_2\ : label is "soft_lutpair23";
+  attribute SOFT_HLUTNM of \data[0]_i_1__0\ : label is "soft_lutpair25";
+  attribute SOFT_HLUTNM of \data[1]_i_1\ : label is "soft_lutpair25";
+  attribute SOFT_HLUTNM of \data[2]_i_1\ : label is "soft_lutpair24";
+  attribute SOFT_HLUTNM of \data[3]_i_2\ : label is "soft_lutpair24";
 begin
   \data_reg[3]_0\(3 downto 0) <= \^data_reg[3]_0\(3 downto 0);
 \data[0]_i_1__0\: unisim.vcomponents.LUT1
@@ -454,8 +467,8 @@ begin
       INIT => X"FFFFFFFE"
     )
         port map (
-      I0 => Q(0),
-      I1 => Q(4),
+      I0 => Q(4),
+      I1 => Q(0),
       I2 => Q(2),
       I3 => Q(1),
       I4 => Q(3),
@@ -477,8 +490,8 @@ begin
       INIT => X"E"
     )
         port map (
-      I0 => Q(4),
-      I1 => Q(0),
+      I0 => Q(0),
+      I1 => Q(4),
       O => shift_counter_rst
     );
 \data_reg[0]\: unisim.vcomponents.FDCE
@@ -533,13 +546,12 @@ use UNISIM.VCOMPONENTS.ALL;
 entity reg_16_bit is
   port (
     DI : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    Q : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : out STD_LOGIC_VECTOR ( 14 downto 0 );
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
     \data_reg[6]_0\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
     \data_reg[10]_0\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
     \data_reg[13]_0\ : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    S : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \data_reg[14]_0\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    S : out STD_LOGIC_VECTOR ( 3 downto 0 );
     \data_reg[2]_0\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
     \data_reg[6]_1\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
     \data_reg[10]_1\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -550,22 +562,22 @@ entity reg_16_bit is
     \FSM_onehot_cur_state_reg[0]_1\ : in STD_LOGIC;
     \FSM_onehot_cur_state_reg[0]_2\ : in STD_LOGIC_VECTOR ( 4 downto 0 );
     CO : in STD_LOGIC_VECTOR ( 0 to 0 );
-    data_reg : in STD_LOGIC_VECTOR ( 3 downto 0 );
     D : in STD_LOGIC_VECTOR ( 14 downto 0 );
     O : in STD_LOGIC_VECTOR ( 0 to 0 );
     \data_reg[3]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
+    data_reg : in STD_LOGIC_VECTOR ( 0 to 0 );
     CLK : in STD_LOGIC;
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
 end reg_16_bit;
 
 architecture STRUCTURE of reg_16_bit is
-  signal \^q\ : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal data : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal \^q\ : STD_LOGIC_VECTOR ( 14 downto 0 );
+  signal data : STD_LOGIC_VECTOR ( 15 to 15 );
   signal size_load : STD_LOGIC;
   signal size_prod : STD_LOGIC_VECTOR ( 3 to 3 );
 begin
-  Q(11 downto 0) <= \^q\(11 downto 0);
+  Q(14 downto 0) <= \^q\(14 downto 0);
 \FSM_onehot_cur_state[13]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFFFFFFFFFFBFBFB"
@@ -607,7 +619,7 @@ begin
       CE => size_load,
       CLR => AR(0),
       D => D(0),
-      Q => data(0)
+      Q => \^q\(0)
     );
 \data_reg[10]\: unisim.vcomponents.FDCE
     generic map(
@@ -618,7 +630,7 @@ begin
       CE => size_load,
       CLR => AR(0),
       D => D(9),
-      Q => \^q\(7)
+      Q => \^q\(10)
     );
 \data_reg[11]\: unisim.vcomponents.FDCE
     generic map(
@@ -629,7 +641,7 @@ begin
       CE => size_load,
       CLR => AR(0),
       D => D(10),
-      Q => \^q\(8)
+      Q => \^q\(11)
     );
 \data_reg[12]\: unisim.vcomponents.FDCE
     generic map(
@@ -640,7 +652,7 @@ begin
       CE => size_load,
       CLR => AR(0),
       D => D(11),
-      Q => \^q\(9)
+      Q => \^q\(12)
     );
 \data_reg[13]\: unisim.vcomponents.FDCE
     generic map(
@@ -651,7 +663,7 @@ begin
       CE => size_load,
       CLR => AR(0),
       D => D(12),
-      Q => \^q\(10)
+      Q => \^q\(13)
     );
 \data_reg[14]\: unisim.vcomponents.FDCE
     generic map(
@@ -662,7 +674,7 @@ begin
       CE => size_load,
       CLR => AR(0),
       D => D(13),
-      Q => \^q\(11)
+      Q => \^q\(14)
     );
 \data_reg[15]\: unisim.vcomponents.FDCE
     generic map(
@@ -684,7 +696,7 @@ begin
       CE => size_load,
       CLR => AR(0),
       D => D(1),
-      Q => data(1)
+      Q => \^q\(1)
     );
 \data_reg[2]\: unisim.vcomponents.FDCE
     generic map(
@@ -695,7 +707,7 @@ begin
       CE => size_load,
       CLR => AR(0),
       D => D(2),
-      Q => data(2)
+      Q => \^q\(2)
     );
 \data_reg[3]\: unisim.vcomponents.FDCE
     generic map(
@@ -706,7 +718,7 @@ begin
       CE => size_load,
       CLR => AR(0),
       D => size_prod(3),
-      Q => \^q\(0)
+      Q => \^q\(3)
     );
 \data_reg[4]\: unisim.vcomponents.FDCE
     generic map(
@@ -717,7 +729,7 @@ begin
       CE => size_load,
       CLR => AR(0),
       D => D(3),
-      Q => \^q\(1)
+      Q => \^q\(4)
     );
 \data_reg[5]\: unisim.vcomponents.FDCE
     generic map(
@@ -728,7 +740,7 @@ begin
       CE => size_load,
       CLR => AR(0),
       D => D(4),
-      Q => \^q\(2)
+      Q => \^q\(5)
     );
 \data_reg[6]\: unisim.vcomponents.FDCE
     generic map(
@@ -739,7 +751,7 @@ begin
       CE => size_load,
       CLR => AR(0),
       D => D(5),
-      Q => \^q\(3)
+      Q => \^q\(6)
     );
 \data_reg[7]\: unisim.vcomponents.FDCE
     generic map(
@@ -750,7 +762,7 @@ begin
       CE => size_load,
       CLR => AR(0),
       D => D(6),
-      Q => \^q\(4)
+      Q => \^q\(7)
     );
 \data_reg[8]\: unisim.vcomponents.FDCE
     generic map(
@@ -761,7 +773,7 @@ begin
       CE => size_load,
       CLR => AR(0),
       D => D(7),
-      Q => \^q\(5)
+      Q => \^q\(8)
     );
 \data_reg[9]\: unisim.vcomponents.FDCE
     generic map(
@@ -772,7 +784,7 @@ begin
       CE => size_load,
       CLR => AR(0),
       D => D(8),
-      Q => \^q\(6)
+      Q => \^q\(9)
     );
 \eqOp_carry__0_i_1\: unisim.vcomponents.LUT2
     generic map(
@@ -780,329 +792,316 @@ begin
     )
         port map (
       I0 => data(15),
-      I1 => data_reg(3),
+      I1 => data_reg(0),
       O => \data_reg[15]_0\(0)
     );
-eqOp_carry_i_4: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"9009000000009009"
-    )
-        port map (
-      I0 => data(1),
-      I1 => data_reg(1),
-      I2 => data(2),
-      I3 => data_reg(2),
-      I4 => data_reg(0),
-      I5 => data(0),
-      O => S(0)
-    );
-\minusOp__0_carry__0_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"E"
-    )
-        port map (
-      I0 => \^q\(3),
-      I1 => i_data_10(6),
-      O => \data_reg[6]_0\(3)
-    );
-\minusOp__0_carry__0_i_2\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"E"
-    )
-        port map (
-      I0 => \^q\(2),
-      I1 => i_data_10(5),
-      O => \data_reg[6]_0\(2)
-    );
-\minusOp__0_carry__0_i_3\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"E"
-    )
-        port map (
-      I0 => \^q\(1),
-      I1 => i_data_10(4),
-      O => \data_reg[6]_0\(1)
-    );
-\minusOp__0_carry__0_i_4\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"E"
-    )
-        port map (
-      I0 => \^q\(0),
-      I1 => i_data_10(3),
-      O => \data_reg[6]_0\(0)
-    );
-\minusOp__0_carry__0_i_5\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"1EE1"
-    )
-        port map (
-      I0 => i_data_10(6),
-      I1 => \^q\(3),
-      I2 => i_data_10(7),
-      I3 => \^q\(4),
-      O => \data_reg[6]_1\(3)
-    );
-\minusOp__0_carry__0_i_6\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"1EE1"
-    )
-        port map (
-      I0 => i_data_10(5),
-      I1 => \^q\(2),
-      I2 => \^q\(3),
-      I3 => i_data_10(6),
-      O => \data_reg[6]_1\(2)
-    );
-\minusOp__0_carry__0_i_7\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"1EE1"
-    )
-        port map (
-      I0 => i_data_10(4),
-      I1 => \^q\(1),
-      I2 => \^q\(2),
-      I3 => i_data_10(5),
-      O => \data_reg[6]_1\(1)
-    );
-\minusOp__0_carry__0_i_8\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"1EE1"
-    )
-        port map (
-      I0 => i_data_10(3),
-      I1 => \^q\(0),
-      I2 => i_data_10(4),
-      I3 => \^q\(1),
-      O => \data_reg[6]_1\(0)
-    );
-\minusOp__0_carry__1_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"E"
-    )
-        port map (
-      I0 => \^q\(7),
-      I1 => i_data_10(10),
-      O => \data_reg[10]_0\(3)
-    );
-\minusOp__0_carry__1_i_2\: unisim.vcomponents.LUT2
+\i___0_carry__0_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"E"
     )
         port map (
       I0 => \^q\(6),
-      I1 => i_data_10(9),
-      O => \data_reg[10]_0\(2)
+      I1 => i_data_10(6),
+      O => \data_reg[6]_0\(3)
     );
-\minusOp__0_carry__1_i_3\: unisim.vcomponents.LUT2
+\i___0_carry__0_i_2\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"E"
     )
         port map (
       I0 => \^q\(5),
-      I1 => i_data_10(8),
-      O => \data_reg[10]_0\(1)
+      I1 => i_data_10(5),
+      O => \data_reg[6]_0\(2)
     );
-\minusOp__0_carry__1_i_4\: unisim.vcomponents.LUT2
+\i___0_carry__0_i_3\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"E"
     )
         port map (
       I0 => \^q\(4),
-      I1 => i_data_10(7),
-      O => \data_reg[10]_0\(0)
+      I1 => i_data_10(4),
+      O => \data_reg[6]_0\(1)
     );
-\minusOp__0_carry__1_i_5\: unisim.vcomponents.LUT4
+\i___0_carry__0_i_4\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"E"
+    )
+        port map (
+      I0 => \^q\(3),
+      I1 => i_data_10(3),
+      O => \data_reg[6]_0\(0)
+    );
+\i___0_carry__0_i_5\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"1EE1"
     )
         port map (
-      I0 => i_data_10(10),
-      I1 => \^q\(7),
-      I2 => i_data_10(11),
-      I3 => \^q\(8),
-      O => \data_reg[10]_1\(3)
-    );
-\minusOp__0_carry__1_i_6\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"1EE1"
-    )
-        port map (
-      I0 => i_data_10(9),
+      I0 => i_data_10(6),
       I1 => \^q\(6),
-      I2 => \^q\(7),
-      I3 => i_data_10(10),
-      O => \data_reg[10]_1\(2)
+      I2 => i_data_10(7),
+      I3 => \^q\(7),
+      O => \data_reg[6]_1\(3)
     );
-\minusOp__0_carry__1_i_7\: unisim.vcomponents.LUT4
+\i___0_carry__0_i_6\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"1EE1"
     )
         port map (
-      I0 => i_data_10(8),
+      I0 => i_data_10(5),
       I1 => \^q\(5),
       I2 => \^q\(6),
-      I3 => i_data_10(9),
-      O => \data_reg[10]_1\(1)
+      I3 => i_data_10(6),
+      O => \data_reg[6]_1\(2)
     );
-\minusOp__0_carry__1_i_8\: unisim.vcomponents.LUT4
+\i___0_carry__0_i_7\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"1EE1"
     )
         port map (
-      I0 => i_data_10(7),
+      I0 => i_data_10(4),
       I1 => \^q\(4),
       I2 => \^q\(5),
-      I3 => i_data_10(8),
-      O => \data_reg[10]_1\(0)
+      I3 => i_data_10(5),
+      O => \data_reg[6]_1\(1)
     );
-\minusOp__0_carry__2_i_1\: unisim.vcomponents.LUT2
+\i___0_carry__0_i_8\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"1EE1"
+    )
+        port map (
+      I0 => i_data_10(3),
+      I1 => \^q\(3),
+      I2 => i_data_10(4),
+      I3 => \^q\(4),
+      O => \data_reg[6]_1\(0)
+    );
+\i___0_carry__1_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"E"
     )
         port map (
       I0 => \^q\(10),
-      I1 => i_data_10(13),
-      O => \data_reg[13]_0\(2)
+      I1 => i_data_10(10),
+      O => \data_reg[10]_0\(3)
     );
-\minusOp__0_carry__2_i_2\: unisim.vcomponents.LUT2
+\i___0_carry__1_i_2\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"E"
     )
         port map (
       I0 => \^q\(9),
-      I1 => i_data_10(12),
-      O => \data_reg[13]_0\(1)
+      I1 => i_data_10(9),
+      O => \data_reg[10]_0\(2)
     );
-\minusOp__0_carry__2_i_3\: unisim.vcomponents.LUT2
+\i___0_carry__1_i_3\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"E"
     )
         port map (
       I0 => \^q\(8),
+      I1 => i_data_10(8),
+      O => \data_reg[10]_0\(1)
+    );
+\i___0_carry__1_i_4\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"E"
+    )
+        port map (
+      I0 => \^q\(7),
+      I1 => i_data_10(7),
+      O => \data_reg[10]_0\(0)
+    );
+\i___0_carry__1_i_5\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"1EE1"
+    )
+        port map (
+      I0 => i_data_10(10),
+      I1 => \^q\(10),
+      I2 => \^q\(11),
+      I3 => i_data_10(11),
+      O => \data_reg[10]_1\(3)
+    );
+\i___0_carry__1_i_6\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"1EE1"
+    )
+        port map (
+      I0 => i_data_10(9),
+      I1 => \^q\(9),
+      I2 => i_data_10(10),
+      I3 => \^q\(10),
+      O => \data_reg[10]_1\(2)
+    );
+\i___0_carry__1_i_7\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"1EE1"
+    )
+        port map (
+      I0 => i_data_10(8),
+      I1 => \^q\(8),
+      I2 => \^q\(9),
+      I3 => i_data_10(9),
+      O => \data_reg[10]_1\(1)
+    );
+\i___0_carry__1_i_8\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"1EE1"
+    )
+        port map (
+      I0 => i_data_10(7),
+      I1 => \^q\(7),
+      I2 => \^q\(8),
+      I3 => i_data_10(8),
+      O => \data_reg[10]_1\(0)
+    );
+\i___0_carry__2_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"E"
+    )
+        port map (
+      I0 => \^q\(13),
+      I1 => i_data_10(13),
+      O => \data_reg[13]_0\(2)
+    );
+\i___0_carry__2_i_2\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"E"
+    )
+        port map (
+      I0 => \^q\(12),
+      I1 => i_data_10(12),
+      O => \data_reg[13]_0\(1)
+    );
+\i___0_carry__2_i_3\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"E"
+    )
+        port map (
+      I0 => \^q\(11),
       I1 => i_data_10(11),
       O => \data_reg[13]_0\(0)
     );
-\minusOp__0_carry__2_i_4\: unisim.vcomponents.LUT4
+\i___0_carry__2_i_4\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"1EE1"
     )
         port map (
       I0 => i_data_10(14),
-      I1 => \^q\(11),
+      I1 => \^q\(14),
       I2 => i_data_10(15),
       I3 => data(15),
-      O => \data_reg[14]_0\(3)
+      O => S(3)
     );
-\minusOp__0_carry__2_i_5\: unisim.vcomponents.LUT4
+\i___0_carry__2_i_5\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"1EE1"
     )
         port map (
       I0 => i_data_10(13),
-      I1 => \^q\(10),
+      I1 => \^q\(13),
       I2 => i_data_10(14),
-      I3 => \^q\(11),
-      O => \data_reg[14]_0\(2)
+      I3 => \^q\(14),
+      O => S(2)
     );
-\minusOp__0_carry__2_i_6\: unisim.vcomponents.LUT4
+\i___0_carry__2_i_6\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"1EE1"
     )
         port map (
       I0 => i_data_10(12),
-      I1 => \^q\(9),
-      I2 => \^q\(10),
+      I1 => \^q\(12),
+      I2 => \^q\(13),
       I3 => i_data_10(13),
-      O => \data_reg[14]_0\(1)
+      O => S(1)
     );
-\minusOp__0_carry__2_i_7\: unisim.vcomponents.LUT4
+\i___0_carry__2_i_7\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"1EE1"
     )
         port map (
       I0 => i_data_10(11),
-      I1 => \^q\(8),
-      I2 => \^q\(9),
+      I1 => \^q\(11),
+      I2 => \^q\(12),
       I3 => i_data_10(12),
-      O => \data_reg[14]_0\(0)
+      O => S(0)
     );
-\minusOp__0_carry_i_1\: unisim.vcomponents.LUT2
+\i___0_carry_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"E"
     )
         port map (
-      I0 => data(2),
+      I0 => \^q\(2),
       I1 => i_data_10(2),
       O => DI(3)
     );
-\minusOp__0_carry_i_2\: unisim.vcomponents.LUT2
+\i___0_carry_i_2\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
         port map (
-      I0 => i_data_10(2),
-      I1 => data(2),
+      I0 => \^q\(2),
+      I1 => i_data_10(2),
       O => DI(2)
     );
-\minusOp__0_carry_i_3\: unisim.vcomponents.LUT2
+\i___0_carry_i_3\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"E"
     )
         port map (
-      I0 => i_data_10(0),
-      I1 => data(0),
+      I0 => \^q\(0),
+      I1 => i_data_10(0),
       O => DI(1)
     );
-\minusOp__0_carry_i_4\: unisim.vcomponents.LUT2
+\i___0_carry_i_4\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
         port map (
-      I0 => data(0),
+      I0 => \^q\(0),
       I1 => i_data_10(0),
       O => DI(0)
     );
-\minusOp__0_carry_i_5\: unisim.vcomponents.LUT4
+\i___0_carry_i_5\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"1EE1"
     )
         port map (
       I0 => i_data_10(2),
-      I1 => data(2),
-      I2 => \^q\(0),
+      I1 => \^q\(2),
+      I2 => \^q\(3),
       I3 => i_data_10(3),
       O => \data_reg[2]_0\(3)
     );
-\minusOp__0_carry_i_6\: unisim.vcomponents.LUT4
+\i___0_carry_i_6\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"6999"
     )
         port map (
-      I0 => data(2),
-      I1 => i_data_10(2),
+      I0 => i_data_10(2),
+      I1 => \^q\(2),
       I2 => i_data_10(1),
-      I3 => data(1),
+      I3 => \^q\(1),
       O => \data_reg[2]_0\(2)
     );
-\minusOp__0_carry_i_7\: unisim.vcomponents.LUT4
+\i___0_carry_i_7\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"E11E"
     )
         port map (
-      I0 => data(0),
-      I1 => i_data_10(0),
+      I0 => i_data_10(0),
+      I1 => \^q\(0),
       I2 => i_data_10(1),
-      I3 => data(1),
+      I3 => \^q\(1),
       O => \data_reg[2]_0\(1)
     );
-\minusOp__0_carry_i_8\: unisim.vcomponents.LUT2
+\i___0_carry_i_8\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => i_data_10(0),
-      I1 => data(0),
+      I1 => \^q\(0),
       O => \data_reg[2]_0\(0)
     );
 end STRUCTURE;
@@ -1114,37 +1113,26 @@ entity reg_4_bit is
   port (
     D : out STD_LOGIC_VECTOR ( 1 downto 0 );
     \data_reg[3]_0\ : out STD_LOGIC;
-    \data_reg[3]_1\ : out STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 2 downto 0 );
     \FSM_onehot_cur_state[11]_i_2_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    delta_value : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    \data_reg[2]_0\ : in STD_LOGIC;
+    delta_value : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    \data_reg[3]_1\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     CLK : in STD_LOGIC;
-    AR : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \data_reg[1]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
+    AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
 end reg_4_bit;
 
 architecture STRUCTURE of reg_4_bit is
   signal \FSM_onehot_cur_state[11]_i_2_n_0\ : STD_LOGIC;
   signal \FSM_onehot_cur_state[11]_i_3_n_0\ : STD_LOGIC;
-  signal \data[0]_i_1__4_n_0\ : STD_LOGIC;
-  signal \data[0]_i_2_n_0\ : STD_LOGIC;
-  signal \data[0]_i_3__0_n_0\ : STD_LOGIC;
-  signal \data[2]_i_1__3_n_0\ : STD_LOGIC;
-  signal \^data_reg[3]_0\ : STD_LOGIC;
   signal \data_reg_n_0_[0]\ : STD_LOGIC;
   signal \data_reg_n_0_[1]\ : STD_LOGIC;
   signal \data_reg_n_0_[2]\ : STD_LOGIC;
   signal \data_reg_n_0_[3]\ : STD_LOGIC;
-  signal sel0 : STD_LOGIC_VECTOR ( 7 to 7 );
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \FSM_onehot_cur_state[10]_i_1\ : label is "soft_lutpair26";
   attribute SOFT_HLUTNM of \FSM_onehot_cur_state[11]_i_1\ : label is "soft_lutpair26";
-  attribute SOFT_HLUTNM of \data[1]_i_3\ : label is "soft_lutpair25";
-  attribute SOFT_HLUTNM of \data[1]_i_4\ : label is "soft_lutpair25";
 begin
-  \data_reg[3]_0\ <= \^data_reg[3]_0\;
 \FSM_onehot_cur_state[10]_i_1\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"A8"
@@ -1188,18 +1176,131 @@ begin
       I3 => \FSM_onehot_cur_state[11]_i_2_0\(1),
       O => \FSM_onehot_cur_state[11]_i_3_n_0\
     );
-\data[0]_i_1__4\: unisim.vcomponents.LUT6
+\data[1]_i_4\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"FEEFFFFEFEFEFEFF"
+      INIT => X"81"
+    )
+        port map (
+      I0 => delta_value(1),
+      I1 => delta_value(0),
+      I2 => delta_value(2),
+      O => \data_reg[3]_0\
+    );
+\data_reg[0]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => CLK,
+      CE => Q(0),
+      CLR => AR(0),
+      D => \data_reg[3]_1\(0),
+      Q => \data_reg_n_0_[0]\
+    );
+\data_reg[1]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => CLK,
+      CE => Q(0),
+      CLR => AR(0),
+      D => \data_reg[3]_1\(1),
+      Q => \data_reg_n_0_[1]\
+    );
+\data_reg[2]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => CLK,
+      CE => Q(0),
+      CLR => AR(0),
+      D => \data_reg[3]_1\(2),
+      Q => \data_reg_n_0_[2]\
+    );
+\data_reg[3]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => CLK,
+      CE => Q(0),
+      CLR => AR(0),
+      D => \data_reg[3]_1\(3),
+      Q => \data_reg_n_0_[3]\
+    );
+end STRUCTURE;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity reg_8_bit is
+  port (
+    E : out STD_LOGIC_VECTOR ( 0 to 0 );
+    S : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    \data_reg[6]_0\ : out STD_LOGIC_VECTOR ( 6 downto 0 );
+    DI : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    D : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    \data_reg[7]_0\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    \data_reg[3]_0\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    i_data_IBUF : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    CO : in STD_LOGIC_VECTOR ( 0 to 0 );
+    delta_value : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    \data_reg[1]_0\ : in STD_LOGIC;
+    \minusOp_carry__0\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    CLK : in STD_LOGIC;
+    AR : in STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+end reg_8_bit;
+
+architecture STRUCTURE of reg_8_bit is
+  signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal \data[0]_i_2_n_0\ : STD_LOGIC;
+  signal \data[0]_i_3__0_n_0\ : STD_LOGIC;
+  signal \data[1]_i_2_n_0\ : STD_LOGIC;
+  signal \data[1]_i_3_n_0\ : STD_LOGIC;
+  signal \data[3]_i_2__0_n_0\ : STD_LOGIC;
+  signal \^data_reg[6]_0\ : STD_LOGIC_VECTOR ( 6 downto 0 );
+  signal \data_reg_n_0_[7]\ : STD_LOGIC;
+  signal max_comp_out : STD_LOGIC_VECTOR ( 7 downto 0 );
+  attribute SOFT_HLUTNM : string;
+  attribute SOFT_HLUTNM of \data[0]_i_1__2\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \data[1]_i_1__1\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \data[1]_i_2\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \data[1]_i_3\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \data[2]_i_1__1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \data[3]_i_1__1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \data[4]_i_1__0\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \data[5]_i_1__0\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \data[6]_i_1__0\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \data[7]_i_1__1\ : label is "soft_lutpair1";
+begin
+  E(0) <= \^e\(0);
+  \data_reg[6]_0\(6 downto 0) <= \^data_reg[6]_0\(6 downto 0);
+\data[0]_i_1__2\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"B8"
+    )
+        port map (
+      I0 => i_data_IBUF(0),
+      I1 => CO(0),
+      I2 => \^data_reg[6]_0\(0),
+      O => max_comp_out(0)
+    );
+\data[0]_i_1__3\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFFFFFEBFEEEEF"
     )
         port map (
       I0 => \data[0]_i_2_n_0\,
-      I1 => \data[0]_i_3__0_n_0\,
-      I2 => delta_value(7),
-      I3 => \^data_reg[3]_0\,
-      I4 => delta_value(6),
-      I5 => delta_value(5),
-      O => \data[0]_i_1__4_n_0\
+      I1 => delta_value(7),
+      I2 => \data[1]_i_2_n_0\,
+      I3 => delta_value(6),
+      I4 => delta_value(5),
+      I5 => \data[0]_i_3__0_n_0\,
+      O => D(0)
     );
 \data[0]_i_2\: unisim.vcomponents.LUT6
     generic map(
@@ -1227,154 +1328,7 @@ begin
       I5 => delta_value(6),
       O => \data[0]_i_3__0_n_0\
     );
-\data[1]_i_3\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"81"
-    )
-        port map (
-      I0 => delta_value(1),
-      I1 => delta_value(0),
-      I2 => delta_value(2),
-      O => \data_reg[3]_1\
-    );
-\data[1]_i_4\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"7FFFFFFF"
-    )
-        port map (
-      I0 => delta_value(3),
-      I1 => delta_value(4),
-      I2 => delta_value(1),
-      I3 => delta_value(0),
-      I4 => delta_value(2),
-      O => \^data_reg[3]_0\
-    );
-\data[2]_i_1__3\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"2AAAAAAAAAAAAAA8"
-    )
-        port map (
-      I0 => \data_reg[2]_0\,
-      I1 => delta_value(0),
-      I2 => delta_value(4),
-      I3 => delta_value(3),
-      I4 => delta_value(1),
-      I5 => delta_value(2),
-      O => \data[2]_i_1__3_n_0\
-    );
-\data[3]_i_1__3\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000100"
-    )
-        port map (
-      I0 => delta_value(0),
-      I1 => delta_value(2),
-      I2 => delta_value(1),
-      I3 => \data_reg[2]_0\,
-      I4 => delta_value(4),
-      I5 => delta_value(3),
-      O => sel0(7)
-    );
-\data_reg[0]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => CLK,
-      CE => Q(0),
-      CLR => AR(0),
-      D => \data[0]_i_1__4_n_0\,
-      Q => \data_reg_n_0_[0]\
-    );
-\data_reg[1]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => CLK,
-      CE => Q(0),
-      CLR => AR(0),
-      D => \data_reg[1]_0\(0),
-      Q => \data_reg_n_0_[1]\
-    );
-\data_reg[2]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => CLK,
-      CE => Q(0),
-      CLR => AR(0),
-      D => \data[2]_i_1__3_n_0\,
-      Q => \data_reg_n_0_[2]\
-    );
-\data_reg[3]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => CLK,
-      CE => Q(0),
-      CLR => AR(0),
-      D => sel0(7),
-      Q => \data_reg_n_0_[3]\
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity reg_8_bit is
-  port (
-    E : out STD_LOGIC_VECTOR ( 0 to 0 );
-    S : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    \data_reg[6]_0\ : out STD_LOGIC_VECTOR ( 6 downto 0 );
-    DI : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    D : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \data_reg[6]_1\ : out STD_LOGIC;
-    \data_reg[7]_0\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    \data_reg[3]_0\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    Q : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    i_data_IBUF : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    CO : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \data_reg[1]_0\ : in STD_LOGIC;
-    \data_reg[1]_1\ : in STD_LOGIC;
-    delta_value : in STD_LOGIC_VECTOR ( 4 downto 0 );
-    \minusOp_inferred__1/i__carry__0\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    CLK : in STD_LOGIC;
-    AR : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-end reg_8_bit;
-
-architecture STRUCTURE of reg_8_bit is
-  signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal \data[1]_i_2_n_0\ : STD_LOGIC;
-  signal \^data_reg[6]_0\ : STD_LOGIC_VECTOR ( 6 downto 0 );
-  signal \data_reg_n_0_[7]\ : STD_LOGIC;
-  signal max_comp_out : STD_LOGIC_VECTOR ( 7 downto 0 );
-  attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \data[0]_i_1__3\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \data[1]_i_1__2\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \data[2]_i_1__2\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \data[3]_i_1__2\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \data[4]_i_1__1\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \data[5]_i_1__1\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \data[6]_i_1__1\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \data[7]_i_1__2\ : label is "soft_lutpair0";
-begin
-  E(0) <= \^e\(0);
-  \data_reg[6]_0\(6 downto 0) <= \^data_reg[6]_0\(6 downto 0);
-\data[0]_i_1__3\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"B8"
-    )
-        port map (
-      I0 => i_data_IBUF(0),
-      I1 => CO(0),
-      I2 => \^data_reg[6]_0\(0),
-      O => max_comp_out(0)
-    );
-\data[1]_i_1__2\: unisim.vcomponents.LUT3
+\data[1]_i_1__1\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"B8"
     )
@@ -1384,29 +1338,41 @@ begin
       I2 => \^data_reg[6]_0\(1),
       O => max_comp_out(1)
     );
-\data[1]_i_1__3\: unisim.vcomponents.LUT6
+\data[1]_i_1__2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00000000F1FFFF1F"
+      INIT => X"00000000BDBDBDFF"
     )
         port map (
       I0 => \data[1]_i_2_n_0\,
-      I1 => \data_reg[1]_0\,
-      I2 => \data_reg[1]_1\,
-      I3 => delta_value(3),
-      I4 => delta_value(2),
-      I5 => delta_value(4),
-      O => D(0)
+      I1 => delta_value(6),
+      I2 => delta_value(5),
+      I3 => \data[1]_i_3_n_0\,
+      I4 => \data_reg[1]_0\,
+      I5 => delta_value(7),
+      O => D(1)
     );
-\data[1]_i_2\: unisim.vcomponents.LUT2
+\data[1]_i_2\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"7FFFFFFF"
+    )
+        port map (
+      I0 => delta_value(3),
+      I1 => delta_value(4),
+      I2 => delta_value(1),
+      I3 => delta_value(0),
+      I4 => delta_value(2),
+      O => \data[1]_i_2_n_0\
+    );
+\data[1]_i_3\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"E"
     )
         port map (
-      I0 => delta_value(1),
-      I1 => delta_value(0),
-      O => \data[1]_i_2_n_0\
+      I0 => delta_value(4),
+      I1 => delta_value(3),
+      O => \data[1]_i_3_n_0\
     );
-\data[2]_i_1__2\: unisim.vcomponents.LUT3
+\data[2]_i_1__1\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"B8"
     )
@@ -1416,7 +1382,20 @@ begin
       I2 => \^data_reg[6]_0\(2),
       O => max_comp_out(2)
     );
-\data[3]_i_1__2\: unisim.vcomponents.LUT3
+\data[2]_i_1__2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"2AAAAAAAAAAAAAA8"
+    )
+        port map (
+      I0 => \data[3]_i_2__0_n_0\,
+      I1 => delta_value(0),
+      I2 => delta_value(4),
+      I3 => delta_value(3),
+      I4 => delta_value(1),
+      I5 => delta_value(2),
+      O => D(2)
+    );
+\data[3]_i_1__1\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"B8"
     )
@@ -1426,17 +1405,30 @@ begin
       I2 => \^data_reg[6]_0\(3),
       O => max_comp_out(3)
     );
+\data[3]_i_1__2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000000000000100"
+    )
+        port map (
+      I0 => delta_value(0),
+      I1 => delta_value(2),
+      I2 => delta_value(1),
+      I3 => \data[3]_i_2__0_n_0\,
+      I4 => delta_value(4),
+      I5 => delta_value(3),
+      O => D(3)
+    );
 \data[3]_i_2__0\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"01"
     )
         port map (
-      I0 => delta_value(2),
-      I1 => delta_value(3),
-      I2 => delta_value(4),
-      O => \data_reg[6]_1\
+      I0 => delta_value(5),
+      I1 => delta_value(6),
+      I2 => delta_value(7),
+      O => \data[3]_i_2__0_n_0\
     );
-\data[4]_i_1__1\: unisim.vcomponents.LUT3
+\data[4]_i_1__0\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"B8"
     )
@@ -1446,7 +1438,7 @@ begin
       I2 => \^data_reg[6]_0\(4),
       O => max_comp_out(4)
     );
-\data[5]_i_1__1\: unisim.vcomponents.LUT3
+\data[5]_i_1__0\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"B8"
     )
@@ -1456,7 +1448,7 @@ begin
       I2 => \^data_reg[6]_0\(5),
       O => max_comp_out(5)
     );
-\data[6]_i_1__1\: unisim.vcomponents.LUT3
+\data[6]_i_1__0\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"B8"
     )
@@ -1475,7 +1467,7 @@ begin
       I1 => Q(1),
       O => \^e\(0)
     );
-\data[7]_i_1__2\: unisim.vcomponents.LUT3
+\data[7]_i_1__1\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"B8"
     )
@@ -1661,76 +1653,76 @@ gtOp_carry_i_8: unisim.vcomponents.LUT4
       I3 => i_data_IBUF(1),
       O => S(0)
     );
-\i__carry__0_i_1\: unisim.vcomponents.LUT2
+\minusOp_carry__0_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
         port map (
       I0 => \data_reg_n_0_[7]\,
-      I1 => \minusOp_inferred__1/i__carry__0\(7),
+      I1 => \minusOp_carry__0\(7),
       O => \data_reg[7]_0\(3)
     );
-\i__carry__0_i_2\: unisim.vcomponents.LUT2
+\minusOp_carry__0_i_2\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
         port map (
       I0 => \^data_reg[6]_0\(6),
-      I1 => \minusOp_inferred__1/i__carry__0\(6),
+      I1 => \minusOp_carry__0\(6),
       O => \data_reg[7]_0\(2)
     );
-\i__carry__0_i_3\: unisim.vcomponents.LUT2
+\minusOp_carry__0_i_3\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
         port map (
       I0 => \^data_reg[6]_0\(5),
-      I1 => \minusOp_inferred__1/i__carry__0\(5),
+      I1 => \minusOp_carry__0\(5),
       O => \data_reg[7]_0\(1)
     );
-\i__carry__0_i_4\: unisim.vcomponents.LUT2
+\minusOp_carry__0_i_4\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
         port map (
       I0 => \^data_reg[6]_0\(4),
-      I1 => \minusOp_inferred__1/i__carry__0\(4),
+      I1 => \minusOp_carry__0\(4),
       O => \data_reg[7]_0\(0)
     );
-\i__carry_i_1\: unisim.vcomponents.LUT2
+minusOp_carry_i_1: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
         port map (
       I0 => \^data_reg[6]_0\(3),
-      I1 => \minusOp_inferred__1/i__carry__0\(3),
+      I1 => \minusOp_carry__0\(3),
       O => \data_reg[3]_0\(3)
     );
-\i__carry_i_2\: unisim.vcomponents.LUT2
+minusOp_carry_i_2: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
         port map (
       I0 => \^data_reg[6]_0\(2),
-      I1 => \minusOp_inferred__1/i__carry__0\(2),
+      I1 => \minusOp_carry__0\(2),
       O => \data_reg[3]_0\(2)
     );
-\i__carry_i_3\: unisim.vcomponents.LUT2
+minusOp_carry_i_3: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
         port map (
       I0 => \^data_reg[6]_0\(1),
-      I1 => \minusOp_inferred__1/i__carry__0\(1),
+      I1 => \minusOp_carry__0\(1),
       O => \data_reg[3]_0\(1)
     );
-\i__carry_i_4\: unisim.vcomponents.LUT2
+minusOp_carry_i_4: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
         port map (
       I0 => \^data_reg[6]_0\(0),
-      I1 => \minusOp_inferred__1/i__carry__0\(0),
+      I1 => \minusOp_carry__0\(0),
       O => \data_reg[3]_0\(0)
     );
 end STRUCTURE;
@@ -1813,32 +1805,32 @@ architecture STRUCTURE of reg_8_bit_0 is
   signal \multOp__60_carry__1_i_19_n_0\ : STD_LOGIC;
   signal \multOp__60_carry__1_i_9_n_0\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \multOp__0_carry__0_i_10\ : label is "soft_lutpair21";
-  attribute SOFT_HLUTNM of \multOp__0_carry__0_i_11\ : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \multOp__0_carry__0_i_12\ : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \multOp__0_carry__0_i_9\ : label is "soft_lutpair20";
-  attribute SOFT_HLUTNM of \multOp__0_carry_i_8\ : label is "soft_lutpair19";
-  attribute SOFT_HLUTNM of \multOp__30_carry__0_i_10\ : label is "soft_lutpair21";
-  attribute SOFT_HLUTNM of \multOp__30_carry__0_i_11\ : label is "soft_lutpair18";
-  attribute SOFT_HLUTNM of \multOp__30_carry__0_i_9\ : label is "soft_lutpair20";
-  attribute SOFT_HLUTNM of \multOp__30_carry_i_8\ : label is "soft_lutpair18";
-  attribute SOFT_HLUTNM of \multOp__60_carry__0_i_10\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \multOp__60_carry__0_i_11\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \multOp__60_carry__0_i_12\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \multOp__60_carry__0_i_14\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \multOp__60_carry__0_i_15\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \multOp__60_carry__0_i_9\ : label is "soft_lutpair19";
-  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_10\ : label is "soft_lutpair22";
-  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_11\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_12\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_13\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_14\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_15\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_16\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_17\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_18\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_19\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_9\ : label is "soft_lutpair22";
+  attribute SOFT_HLUTNM of \multOp__0_carry__0_i_10\ : label is "soft_lutpair22";
+  attribute SOFT_HLUTNM of \multOp__0_carry__0_i_11\ : label is "soft_lutpair18";
+  attribute SOFT_HLUTNM of \multOp__0_carry__0_i_12\ : label is "soft_lutpair18";
+  attribute SOFT_HLUTNM of \multOp__0_carry__0_i_9\ : label is "soft_lutpair21";
+  attribute SOFT_HLUTNM of \multOp__0_carry_i_8\ : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of \multOp__30_carry__0_i_10\ : label is "soft_lutpair22";
+  attribute SOFT_HLUTNM of \multOp__30_carry__0_i_11\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \multOp__30_carry__0_i_9\ : label is "soft_lutpair21";
+  attribute SOFT_HLUTNM of \multOp__30_carry_i_8\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \multOp__60_carry__0_i_10\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \multOp__60_carry__0_i_11\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \multOp__60_carry__0_i_12\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \multOp__60_carry__0_i_14\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \multOp__60_carry__0_i_15\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \multOp__60_carry__0_i_9\ : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_10\ : label is "soft_lutpair23";
+  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_11\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_12\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_13\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_14\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_15\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_16\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_17\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_18\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_19\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \multOp__60_carry__1_i_9\ : label is "soft_lutpair23";
 begin
   DI(3 downto 0) <= \^di\(3 downto 0);
   E(0) <= \^e\(0);
@@ -2150,8 +2142,8 @@ begin
         port map (
       I0 => i_data_IBUF(1),
       I1 => A(1),
-      I2 => i_data_IBUF(2),
-      I3 => A(0),
+      I2 => A(0),
+      I3 => i_data_IBUF(2),
       O => \data_reg[3]_0\(1)
     );
 \multOp__0_carry_i_3\: unisim.vcomponents.LUT2
@@ -2165,13 +2157,13 @@ begin
     );
 \multOp__0_carry_i_4\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"96999999CC333333"
+      INIT => X"99699999C3C33333"
     )
         port map (
       I0 => A(2),
       I1 => \multOp__0_carry_i_8_n_0\,
-      I2 => A(0),
-      I3 => i_data_IBUF(2),
+      I2 => i_data_IBUF(2),
+      I3 => A(0),
       I4 => A(1),
       I5 => i_data_IBUF(1),
       O => S(3)
@@ -2181,8 +2173,8 @@ begin
       INIT => X"8777788878887888"
     )
         port map (
-      I0 => A(0),
-      I1 => i_data_IBUF(2),
+      I0 => i_data_IBUF(2),
+      I1 => A(0),
       I2 => A(1),
       I3 => i_data_IBUF(1),
       I4 => i_data_IBUF(0),
@@ -2959,18 +2951,18 @@ architecture STRUCTURE of reg_8_bit_h is
   signal \^q\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal min_comp_out : STD_LOGIC_VECTOR ( 7 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \data[0]_i_1__1\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \data[1]_i_1__0\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \data[2]_i_1__0\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \data[3]_i_1__0\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \data[4]_i_1\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \data[4]_i_1__0\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \data[5]_i_1\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \data[5]_i_1__0\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \data[6]_i_1\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \data[6]_i_1__0\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \data[7]_i_1__1\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \data[7]_i_2\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \data[0]_i_1__1\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \data[1]_i_1__0\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \data[2]_i_1__0\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \data[3]_i_1__0\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \data[4]_i_1\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of \data[4]_i_1__1\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \data[5]_i_1\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of \data[5]_i_1__1\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \data[6]_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \data[6]_i_1__1\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \data[7]_i_1__2\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \data[7]_i_2\ : label is "soft_lutpair7";
 begin
   Q(7 downto 0) <= \^q\(7 downto 0);
 \data[0]_i_1__1\: unisim.vcomponents.LUT3
@@ -3023,7 +3015,7 @@ begin
       I2 => \^q\(4),
       O => min_comp_out(4)
     );
-\data[4]_i_1__0\: unisim.vcomponents.LUT3
+\data[4]_i_1__1\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"B8"
     )
@@ -3043,7 +3035,7 @@ begin
       I2 => \^q\(5),
       O => min_comp_out(5)
     );
-\data[5]_i_1__0\: unisim.vcomponents.LUT3
+\data[5]_i_1__1\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"B8"
     )
@@ -3063,7 +3055,7 @@ begin
       I2 => \^q\(6),
       O => min_comp_out(6)
     );
-\data[6]_i_1__0\: unisim.vcomponents.LUT3
+\data[6]_i_1__1\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"B8"
     )
@@ -3073,7 +3065,7 @@ begin
       I2 => \data_reg[7]_1\(2),
       O => D(2)
     );
-\data[7]_i_1__1\: unisim.vcomponents.LUT3
+\data[7]_i_1__2\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"B8"
     )
@@ -3181,7 +3173,7 @@ begin
       PRE => AR(0),
       Q => \^q\(7)
     );
-\i__carry__0_i_1__0\: unisim.vcomponents.LUT2
+\i__carry__0_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
@@ -3190,7 +3182,7 @@ begin
       I1 => \^q\(7),
       O => \data_reg[7]_0\(3)
     );
-\i__carry__0_i_2__0\: unisim.vcomponents.LUT2
+\i__carry__0_i_2\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
@@ -3199,7 +3191,7 @@ begin
       I1 => \^q\(6),
       O => \data_reg[7]_0\(2)
     );
-\i__carry__0_i_3__0\: unisim.vcomponents.LUT2
+\i__carry__0_i_3\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
@@ -3208,7 +3200,7 @@ begin
       I1 => \^q\(5),
       O => \data_reg[7]_0\(1)
     );
-\i__carry__0_i_4__0\: unisim.vcomponents.LUT2
+\i__carry__0_i_4\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
@@ -3217,7 +3209,7 @@ begin
       I1 => \^q\(4),
       O => \data_reg[7]_0\(0)
     );
-\i__carry_i_1__0\: unisim.vcomponents.LUT2
+\i__carry_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
@@ -3226,7 +3218,7 @@ begin
       I1 => \^q\(3),
       O => \data_reg[3]_0\(3)
     );
-\i__carry_i_2__0\: unisim.vcomponents.LUT2
+\i__carry_i_2\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
@@ -3235,7 +3227,7 @@ begin
       I1 => \^q\(2),
       O => \data_reg[3]_0\(2)
     );
-\i__carry_i_3__0\: unisim.vcomponents.LUT2
+\i__carry_i_3\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
@@ -3244,7 +3236,7 @@ begin
       I1 => \^q\(1),
       O => \data_reg[3]_0\(1)
     );
-\i__carry_i_4__0\: unisim.vcomponents.LUT2
+\i__carry_i_4\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
@@ -3359,10 +3351,10 @@ entity reg_sll_8_bit is
 end reg_sll_8_bit;
 
 architecture STRUCTURE of reg_sll_8_bit is
-  signal \data[0]_i_1__2_n_0\ : STD_LOGIC;
-  signal \data[1]_i_1__1_n_0\ : STD_LOGIC;
-  signal \data[2]_i_1__1_n_0\ : STD_LOGIC;
-  signal \data[3]_i_1__1_n_0\ : STD_LOGIC;
+  signal \data[0]_i_1__4_n_0\ : STD_LOGIC;
+  signal \data[1]_i_1__3_n_0\ : STD_LOGIC;
+  signal \data[2]_i_1__3_n_0\ : STD_LOGIC;
+  signal \data[3]_i_1__3_n_0\ : STD_LOGIC;
   signal \data[8]_i_1_n_0\ : STD_LOGIC;
   signal \^data_reg[6]_0\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \data_reg_n_0_[0]\ : STD_LOGIC;
@@ -3371,10 +3363,10 @@ architecture STRUCTURE of reg_sll_8_bit is
   signal \data_reg_n_0_[7]\ : STD_LOGIC;
   signal \data_reg_n_0_[8]\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \data[0]_i_1__2\ : label is "soft_lutpair28";
-  attribute SOFT_HLUTNM of \data[1]_i_1__1\ : label is "soft_lutpair28";
-  attribute SOFT_HLUTNM of \data[2]_i_1__1\ : label is "soft_lutpair27";
-  attribute SOFT_HLUTNM of \data[3]_i_1__1\ : label is "soft_lutpair27";
+  attribute SOFT_HLUTNM of \data[0]_i_1__4\ : label is "soft_lutpair28";
+  attribute SOFT_HLUTNM of \data[1]_i_1__3\ : label is "soft_lutpair28";
+  attribute SOFT_HLUTNM of \data[2]_i_1__3\ : label is "soft_lutpair27";
+  attribute SOFT_HLUTNM of \data[3]_i_1__3\ : label is "soft_lutpair27";
   attribute SOFT_HLUTNM of \data[8]_i_1\ : label is "soft_lutpair29";
   attribute SOFT_HLUTNM of \o_data_OBUF[1]_inst_i_1\ : label is "soft_lutpair32";
   attribute SOFT_HLUTNM of \o_data_OBUF[2]_inst_i_1\ : label is "soft_lutpair32";
@@ -3385,16 +3377,16 @@ architecture STRUCTURE of reg_sll_8_bit is
   attribute SOFT_HLUTNM of \o_data_OBUF[7]_inst_i_1\ : label is "soft_lutpair29";
 begin
   \data_reg[6]_0\(3 downto 0) <= \^data_reg[6]_0\(3 downto 0);
-\data[0]_i_1__2\: unisim.vcomponents.LUT2
+\data[0]_i_1__4\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"8"
     )
         port map (
       I0 => Q(0),
       I1 => O(0),
-      O => \data[0]_i_1__2_n_0\
+      O => \data[0]_i_1__4_n_0\
     );
-\data[1]_i_1__1\: unisim.vcomponents.LUT3
+\data[1]_i_1__3\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"B8"
     )
@@ -3402,9 +3394,9 @@ begin
       I0 => O(1),
       I1 => Q(0),
       I2 => \data_reg_n_0_[0]\,
-      O => \data[1]_i_1__1_n_0\
+      O => \data[1]_i_1__3_n_0\
     );
-\data[2]_i_1__1\: unisim.vcomponents.LUT3
+\data[2]_i_1__3\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"B8"
     )
@@ -3412,9 +3404,9 @@ begin
       I0 => O(2),
       I1 => Q(0),
       I2 => \data_reg_n_0_[1]\,
-      O => \data[2]_i_1__1_n_0\
+      O => \data[2]_i_1__3_n_0\
     );
-\data[3]_i_1__1\: unisim.vcomponents.LUT3
+\data[3]_i_1__3\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"B8"
     )
@@ -3422,7 +3414,7 @@ begin
       I0 => O(3),
       I1 => Q(0),
       I2 => \data_reg_n_0_[2]\,
-      O => \data[3]_i_1__1_n_0\
+      O => \data[3]_i_1__3_n_0\
     );
 \data[8]_i_1\: unisim.vcomponents.LUT2
     generic map(
@@ -3441,7 +3433,7 @@ begin
       C => CLK,
       CE => '1',
       CLR => AR(0),
-      D => \data[0]_i_1__2_n_0\,
+      D => \data[0]_i_1__4_n_0\,
       Q => \data_reg_n_0_[0]\
     );
 \data_reg[1]\: unisim.vcomponents.FDCE
@@ -3452,7 +3444,7 @@ begin
       C => CLK,
       CE => '1',
       CLR => AR(0),
-      D => \data[1]_i_1__1_n_0\,
+      D => \data[1]_i_1__3_n_0\,
       Q => \data_reg_n_0_[1]\
     );
 \data_reg[2]\: unisim.vcomponents.FDCE
@@ -3463,7 +3455,7 @@ begin
       C => CLK,
       CE => '1',
       CLR => AR(0),
-      D => \data[2]_i_1__1_n_0\,
+      D => \data[2]_i_1__3_n_0\,
       Q => \data_reg_n_0_[2]\
     );
 \data_reg[3]\: unisim.vcomponents.FDCE
@@ -3474,7 +3466,7 @@ begin
       C => CLK,
       CE => '1',
       CLR => AR(0),
-      D => \data[3]_i_1__1_n_0\,
+      D => \data[3]_i_1__3_n_0\,
       Q => \^data_reg[6]_0\(0)
     );
 \data_reg[4]\: unisim.vcomponents.FDCE
@@ -3637,7 +3629,6 @@ architecture STRUCTURE of datapath is
   signal MAX_VALUE_REG_n_13 : STD_LOGIC;
   signal MAX_VALUE_REG_n_14 : STD_LOGIC;
   signal MAX_VALUE_REG_n_15 : STD_LOGIC;
-  signal MAX_VALUE_REG_n_16 : STD_LOGIC;
   signal MAX_VALUE_REG_n_17 : STD_LOGIC;
   signal MAX_VALUE_REG_n_18 : STD_LOGIC;
   signal MAX_VALUE_REG_n_19 : STD_LOGIC;
@@ -3648,6 +3639,8 @@ architecture STRUCTURE of datapath is
   signal MAX_VALUE_REG_n_23 : STD_LOGIC;
   signal MAX_VALUE_REG_n_24 : STD_LOGIC;
   signal MAX_VALUE_REG_n_25 : STD_LOGIC;
+  signal MAX_VALUE_REG_n_26 : STD_LOGIC;
+  signal MAX_VALUE_REG_n_27 : STD_LOGIC;
   signal MAX_VALUE_REG_n_3 : STD_LOGIC;
   signal MAX_VALUE_REG_n_4 : STD_LOGIC;
   signal MAX_VALUE_REG_n_5 : STD_LOGIC;
@@ -3744,13 +3737,10 @@ architecture STRUCTURE of datapath is
   signal PIXEL_COUNTER_n_18 : STD_LOGIC;
   signal PIXEL_COUNTER_n_19 : STD_LOGIC;
   signal PIXEL_COUNTER_n_20 : STD_LOGIC;
+  signal PIXEL_COUNTER_n_21 : STD_LOGIC;
   signal SHIFT_LEVEL_REG_n_2 : STD_LOGIC;
-  signal SHIFT_LEVEL_REG_n_3 : STD_LOGIC;
   signal SIZE_REG_n_0 : STD_LOGIC;
   signal SIZE_REG_n_1 : STD_LOGIC;
-  signal SIZE_REG_n_17 : STD_LOGIC;
-  signal SIZE_REG_n_18 : STD_LOGIC;
-  signal SIZE_REG_n_19 : STD_LOGIC;
   signal SIZE_REG_n_2 : STD_LOGIC;
   signal SIZE_REG_n_20 : STD_LOGIC;
   signal SIZE_REG_n_21 : STD_LOGIC;
@@ -3779,11 +3769,13 @@ architecture STRUCTURE of datapath is
   signal SIZE_REG_n_43 : STD_LOGIC;
   signal SIZE_REG_n_44 : STD_LOGIC;
   signal SIZE_REG_n_45 : STD_LOGIC;
+  signal SIZE_REG_n_46 : STD_LOGIC;
+  signal SIZE_REG_n_47 : STD_LOGIC;
   signal TEMP_VALUE_REG_n_10 : STD_LOGIC;
   signal TEMP_VALUE_REG_n_11 : STD_LOGIC;
   signal TEMP_VALUE_REG_n_8 : STD_LOGIC;
   signal TEMP_VALUE_REG_n_9 : STD_LOGIC;
-  signal data : STD_LOGIC_VECTOR ( 14 downto 3 );
+  signal data : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal data_reg : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal data_reg_0 : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal delta_value : STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -3804,28 +3796,28 @@ architecture STRUCTURE of datapath is
   signal max_value_load : STD_LOGIC;
   signal minusOp : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal minusOp0_out : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal \minusOp__0_carry__0_n_0\ : STD_LOGIC;
-  signal \minusOp__0_carry__0_n_1\ : STD_LOGIC;
-  signal \minusOp__0_carry__0_n_2\ : STD_LOGIC;
-  signal \minusOp__0_carry__0_n_3\ : STD_LOGIC;
-  signal \minusOp__0_carry__1_n_0\ : STD_LOGIC;
-  signal \minusOp__0_carry__1_n_1\ : STD_LOGIC;
-  signal \minusOp__0_carry__1_n_2\ : STD_LOGIC;
-  signal \minusOp__0_carry__1_n_3\ : STD_LOGIC;
-  signal \minusOp__0_carry__2_n_1\ : STD_LOGIC;
-  signal \minusOp__0_carry__2_n_2\ : STD_LOGIC;
-  signal \minusOp__0_carry__2_n_3\ : STD_LOGIC;
-  signal \minusOp__0_carry_n_0\ : STD_LOGIC;
-  signal \minusOp__0_carry_n_1\ : STD_LOGIC;
-  signal \minusOp__0_carry_n_2\ : STD_LOGIC;
-  signal \minusOp__0_carry_n_3\ : STD_LOGIC;
-  signal \minusOp_inferred__0/i__carry__0_n_1\ : STD_LOGIC;
-  signal \minusOp_inferred__0/i__carry__0_n_2\ : STD_LOGIC;
-  signal \minusOp_inferred__0/i__carry__0_n_3\ : STD_LOGIC;
-  signal \minusOp_inferred__0/i__carry_n_0\ : STD_LOGIC;
-  signal \minusOp_inferred__0/i__carry_n_1\ : STD_LOGIC;
-  signal \minusOp_inferred__0/i__carry_n_2\ : STD_LOGIC;
-  signal \minusOp_inferred__0/i__carry_n_3\ : STD_LOGIC;
+  signal \minusOp_carry__0_n_1\ : STD_LOGIC;
+  signal \minusOp_carry__0_n_2\ : STD_LOGIC;
+  signal \minusOp_carry__0_n_3\ : STD_LOGIC;
+  signal minusOp_carry_n_0 : STD_LOGIC;
+  signal minusOp_carry_n_1 : STD_LOGIC;
+  signal minusOp_carry_n_2 : STD_LOGIC;
+  signal minusOp_carry_n_3 : STD_LOGIC;
+  signal \minusOp_inferred__0/i___0_carry__0_n_0\ : STD_LOGIC;
+  signal \minusOp_inferred__0/i___0_carry__0_n_1\ : STD_LOGIC;
+  signal \minusOp_inferred__0/i___0_carry__0_n_2\ : STD_LOGIC;
+  signal \minusOp_inferred__0/i___0_carry__0_n_3\ : STD_LOGIC;
+  signal \minusOp_inferred__0/i___0_carry__1_n_0\ : STD_LOGIC;
+  signal \minusOp_inferred__0/i___0_carry__1_n_1\ : STD_LOGIC;
+  signal \minusOp_inferred__0/i___0_carry__1_n_2\ : STD_LOGIC;
+  signal \minusOp_inferred__0/i___0_carry__1_n_3\ : STD_LOGIC;
+  signal \minusOp_inferred__0/i___0_carry__2_n_1\ : STD_LOGIC;
+  signal \minusOp_inferred__0/i___0_carry__2_n_2\ : STD_LOGIC;
+  signal \minusOp_inferred__0/i___0_carry__2_n_3\ : STD_LOGIC;
+  signal \minusOp_inferred__0/i___0_carry_n_0\ : STD_LOGIC;
+  signal \minusOp_inferred__0/i___0_carry_n_1\ : STD_LOGIC;
+  signal \minusOp_inferred__0/i___0_carry_n_2\ : STD_LOGIC;
+  signal \minusOp_inferred__0/i___0_carry_n_3\ : STD_LOGIC;
   signal \minusOp_inferred__1/i__carry__0_n_1\ : STD_LOGIC;
   signal \minusOp_inferred__1/i__carry__0_n_2\ : STD_LOGIC;
   signal \minusOp_inferred__1/i__carry__0_n_3\ : STD_LOGIC;
@@ -3902,14 +3894,15 @@ architecture STRUCTURE of datapath is
   signal plusOp_carry_n_1 : STD_LOGIC;
   signal plusOp_carry_n_2 : STD_LOGIC;
   signal plusOp_carry_n_3 : STD_LOGIC;
+  signal sel0 : STD_LOGIC_VECTOR ( 7 to 7 );
   signal size_prod : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal NLW_eqOp_carry_O_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_eqOp_carry__0_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
   signal \NLW_eqOp_carry__0_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_gtOp_carry_O_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_ltOp_carry_O_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal \NLW_minusOp__0_carry__2_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
-  signal \NLW_minusOp_inferred__0/i__carry__0_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
+  signal \NLW_minusOp_carry__0_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
+  signal \NLW_minusOp_inferred__0/i___0_carry__2_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   signal \NLW_minusOp_inferred__1/i__carry__0_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   signal \NLW_multOp__0_carry__1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
   signal \NLW_multOp__0_carry__1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
@@ -3928,12 +3921,12 @@ architecture STRUCTURE of datapath is
   attribute COMPARATOR_THRESHOLD of gtOp_carry : label is 11;
   attribute COMPARATOR_THRESHOLD of ltOp_carry : label is 11;
   attribute ADDER_THRESHOLD : integer;
-  attribute ADDER_THRESHOLD of \minusOp__0_carry\ : label is 35;
-  attribute ADDER_THRESHOLD of \minusOp__0_carry__0\ : label is 35;
-  attribute ADDER_THRESHOLD of \minusOp__0_carry__1\ : label is 35;
-  attribute ADDER_THRESHOLD of \minusOp__0_carry__2\ : label is 35;
-  attribute ADDER_THRESHOLD of \minusOp_inferred__0/i__carry\ : label is 35;
-  attribute ADDER_THRESHOLD of \minusOp_inferred__0/i__carry__0\ : label is 35;
+  attribute ADDER_THRESHOLD of minusOp_carry : label is 35;
+  attribute ADDER_THRESHOLD of \minusOp_carry__0\ : label is 35;
+  attribute ADDER_THRESHOLD of \minusOp_inferred__0/i___0_carry\ : label is 35;
+  attribute ADDER_THRESHOLD of \minusOp_inferred__0/i___0_carry__0\ : label is 35;
+  attribute ADDER_THRESHOLD of \minusOp_inferred__0/i___0_carry__1\ : label is 35;
+  attribute ADDER_THRESHOLD of \minusOp_inferred__0/i___0_carry__2\ : label is 35;
   attribute ADDER_THRESHOLD of \minusOp_inferred__1/i__carry\ : label is 35;
   attribute ADDER_THRESHOLD of \minusOp_inferred__1/i__carry__0\ : label is 35;
   attribute ADDER_THRESHOLD of \multOp__60_carry\ : label is 35;
@@ -3989,7 +3982,10 @@ MAX_VALUE_REG: entity work.reg_8_bit
       AR(0) => AR(0),
       CLK => CLK,
       CO(0) => gtOp,
-      D(0) => MAX_VALUE_REG_n_16,
+      D(3) => sel0(7),
+      D(2) => MAX_VALUE_REG_n_17,
+      D(1) => MAX_VALUE_REG_n_18,
+      D(0) => MAX_VALUE_REG_n_19,
       DI(3) => MAX_VALUE_REG_n_12,
       DI(2) => MAX_VALUE_REG_n_13,
       DI(1) => MAX_VALUE_REG_n_14,
@@ -4001,12 +3997,11 @@ MAX_VALUE_REG: entity work.reg_8_bit
       S(2) => MAX_VALUE_REG_n_2,
       S(1) => MAX_VALUE_REG_n_3,
       S(0) => MAX_VALUE_REG_n_4,
-      \data_reg[1]_0\ => SHIFT_LEVEL_REG_n_3,
-      \data_reg[1]_1\ => SHIFT_LEVEL_REG_n_2,
-      \data_reg[3]_0\(3) => MAX_VALUE_REG_n_22,
-      \data_reg[3]_0\(2) => MAX_VALUE_REG_n_23,
-      \data_reg[3]_0\(1) => MAX_VALUE_REG_n_24,
-      \data_reg[3]_0\(0) => MAX_VALUE_REG_n_25,
+      \data_reg[1]_0\ => SHIFT_LEVEL_REG_n_2,
+      \data_reg[3]_0\(3) => MAX_VALUE_REG_n_24,
+      \data_reg[3]_0\(2) => MAX_VALUE_REG_n_25,
+      \data_reg[3]_0\(1) => MAX_VALUE_REG_n_26,
+      \data_reg[3]_0\(0) => MAX_VALUE_REG_n_27,
       \data_reg[6]_0\(6) => MAX_VALUE_REG_n_5,
       \data_reg[6]_0\(5) => MAX_VALUE_REG_n_6,
       \data_reg[6]_0\(4) => MAX_VALUE_REG_n_7,
@@ -4014,21 +4009,20 @@ MAX_VALUE_REG: entity work.reg_8_bit
       \data_reg[6]_0\(2) => MAX_VALUE_REG_n_9,
       \data_reg[6]_0\(1) => MAX_VALUE_REG_n_10,
       \data_reg[6]_0\(0) => MAX_VALUE_REG_n_11,
-      \data_reg[6]_1\ => MAX_VALUE_REG_n_17,
-      \data_reg[7]_0\(3) => MAX_VALUE_REG_n_18,
-      \data_reg[7]_0\(2) => MAX_VALUE_REG_n_19,
-      \data_reg[7]_0\(1) => MAX_VALUE_REG_n_20,
-      \data_reg[7]_0\(0) => MAX_VALUE_REG_n_21,
-      delta_value(4 downto 0) => delta_value(7 downto 3),
+      \data_reg[7]_0\(3) => MAX_VALUE_REG_n_20,
+      \data_reg[7]_0\(2) => MAX_VALUE_REG_n_21,
+      \data_reg[7]_0\(1) => MAX_VALUE_REG_n_22,
+      \data_reg[7]_0\(0) => MAX_VALUE_REG_n_23,
+      delta_value(7 downto 0) => delta_value(7 downto 0),
       i_data_IBUF(7 downto 0) => i_data_IBUF(7 downto 0),
-      \minusOp_inferred__1/i__carry__0\(7) => MIN_VALUE_REG_n_4,
-      \minusOp_inferred__1/i__carry__0\(6) => MIN_VALUE_REG_n_5,
-      \minusOp_inferred__1/i__carry__0\(5) => MIN_VALUE_REG_n_6,
-      \minusOp_inferred__1/i__carry__0\(4) => MIN_VALUE_REG_n_7,
-      \minusOp_inferred__1/i__carry__0\(3) => MIN_VALUE_REG_n_8,
-      \minusOp_inferred__1/i__carry__0\(2) => MIN_VALUE_REG_n_9,
-      \minusOp_inferred__1/i__carry__0\(1) => MIN_VALUE_REG_n_10,
-      \minusOp_inferred__1/i__carry__0\(0) => MIN_VALUE_REG_n_11
+      \minusOp_carry__0\(7) => MIN_VALUE_REG_n_4,
+      \minusOp_carry__0\(6) => MIN_VALUE_REG_n_5,
+      \minusOp_carry__0\(5) => MIN_VALUE_REG_n_6,
+      \minusOp_carry__0\(4) => MIN_VALUE_REG_n_7,
+      \minusOp_carry__0\(3) => MIN_VALUE_REG_n_8,
+      \minusOp_carry__0\(2) => MIN_VALUE_REG_n_9,
+      \minusOp_carry__0\(1) => MIN_VALUE_REG_n_10,
+      \minusOp_carry__0\(0) => MIN_VALUE_REG_n_11
     );
 MIN_VALUE_REG: entity work.reg_8_bit_h
      port map (
@@ -4155,13 +4149,14 @@ PIXEL_COUNTER: entity work.counter_16_bit
       Q(5) => Q(12),
       Q(4 downto 1) => Q(8 downto 5),
       Q(0) => Q(0),
-      S(0) => PIXEL_COUNTER_n_16,
+      S(3) => PIXEL_COUNTER_n_16,
+      S(2) => PIXEL_COUNTER_n_17,
+      S(1) => PIXEL_COUNTER_n_18,
+      S(0) => PIXEL_COUNTER_n_19,
       data_reg(15 downto 0) => data_reg(15 downto 0),
-      \data_reg[11]_0\(2) => PIXEL_COUNTER_n_17,
-      \data_reg[11]_0\(1) => PIXEL_COUNTER_n_18,
-      \data_reg[11]_0\(0) => PIXEL_COUNTER_n_19,
       \data_reg[14]_0\(0) => PIXEL_COUNTER_n_20,
-      \eqOp_carry__0\(11 downto 0) => data(14 downto 3)
+      \data_reg[1]_0\(0) => PIXEL_COUNTER_n_21,
+      \eqOp_carry__0\(14 downto 0) => data(14 downto 0)
     );
 SHIFT_COUNTER: entity work.counter_4_bit
      port map (
@@ -4178,11 +4173,12 @@ SHIFT_LEVEL_REG: entity work.reg_4_bit
       \FSM_onehot_cur_state[11]_i_2_0\(3 downto 0) => data_reg_0(3 downto 0),
       Q(2 downto 1) => Q(10 downto 9),
       Q(0) => Q(7),
-      \data_reg[1]_0\(0) => MAX_VALUE_REG_n_16,
-      \data_reg[2]_0\ => MAX_VALUE_REG_n_17,
       \data_reg[3]_0\ => SHIFT_LEVEL_REG_n_2,
-      \data_reg[3]_1\ => SHIFT_LEVEL_REG_n_3,
-      delta_value(7 downto 0) => delta_value(7 downto 0)
+      \data_reg[3]_1\(3) => sel0(7),
+      \data_reg[3]_1\(2) => MAX_VALUE_REG_n_17,
+      \data_reg[3]_1\(1) => MAX_VALUE_REG_n_18,
+      \data_reg[3]_1\(0) => MAX_VALUE_REG_n_19,
+      delta_value(2 downto 0) => delta_value(2 downto 0)
     );
 SIZE_REG: entity work.reg_16_bit
      port map (
@@ -4201,39 +4197,37 @@ SIZE_REG: entity work.reg_16_bit
       \FSM_onehot_cur_state_reg[0]_1\ => \FSM_onehot_cur_state_reg[0]_1\,
       \FSM_onehot_cur_state_reg[0]_2\(4 downto 0) => Q(7 downto 3),
       O(0) => \multOp__0_carry_n_4\,
-      Q(11 downto 0) => data(14 downto 3),
-      S(0) => SIZE_REG_n_28,
-      data_reg(3) => data_reg(15),
-      data_reg(2 downto 0) => data_reg(2 downto 0),
-      \data_reg[10]_0\(3) => SIZE_REG_n_21,
-      \data_reg[10]_0\(2) => SIZE_REG_n_22,
-      \data_reg[10]_0\(1) => SIZE_REG_n_23,
-      \data_reg[10]_0\(0) => SIZE_REG_n_24,
-      \data_reg[10]_1\(3) => SIZE_REG_n_41,
-      \data_reg[10]_1\(2) => SIZE_REG_n_42,
-      \data_reg[10]_1\(1) => SIZE_REG_n_43,
-      \data_reg[10]_1\(0) => SIZE_REG_n_44,
-      \data_reg[13]_0\(2) => SIZE_REG_n_25,
-      \data_reg[13]_0\(1) => SIZE_REG_n_26,
-      \data_reg[13]_0\(0) => SIZE_REG_n_27,
-      \data_reg[14]_0\(3) => SIZE_REG_n_29,
-      \data_reg[14]_0\(2) => SIZE_REG_n_30,
-      \data_reg[14]_0\(1) => SIZE_REG_n_31,
-      \data_reg[14]_0\(0) => SIZE_REG_n_32,
-      \data_reg[15]_0\(0) => SIZE_REG_n_45,
-      \data_reg[2]_0\(3) => SIZE_REG_n_33,
-      \data_reg[2]_0\(2) => SIZE_REG_n_34,
-      \data_reg[2]_0\(1) => SIZE_REG_n_35,
-      \data_reg[2]_0\(0) => SIZE_REG_n_36,
+      Q(14 downto 0) => data(14 downto 0),
+      S(3) => SIZE_REG_n_31,
+      S(2) => SIZE_REG_n_32,
+      S(1) => SIZE_REG_n_33,
+      S(0) => SIZE_REG_n_34,
+      data_reg(0) => data_reg(15),
+      \data_reg[10]_0\(3) => SIZE_REG_n_24,
+      \data_reg[10]_0\(2) => SIZE_REG_n_25,
+      \data_reg[10]_0\(1) => SIZE_REG_n_26,
+      \data_reg[10]_0\(0) => SIZE_REG_n_27,
+      \data_reg[10]_1\(3) => SIZE_REG_n_43,
+      \data_reg[10]_1\(2) => SIZE_REG_n_44,
+      \data_reg[10]_1\(1) => SIZE_REG_n_45,
+      \data_reg[10]_1\(0) => SIZE_REG_n_46,
+      \data_reg[13]_0\(2) => SIZE_REG_n_28,
+      \data_reg[13]_0\(1) => SIZE_REG_n_29,
+      \data_reg[13]_0\(0) => SIZE_REG_n_30,
+      \data_reg[15]_0\(0) => SIZE_REG_n_47,
+      \data_reg[2]_0\(3) => SIZE_REG_n_35,
+      \data_reg[2]_0\(2) => SIZE_REG_n_36,
+      \data_reg[2]_0\(1) => SIZE_REG_n_37,
+      \data_reg[2]_0\(0) => SIZE_REG_n_38,
       \data_reg[3]_0\(0) => \multOp__30_carry_n_7\,
-      \data_reg[6]_0\(3) => SIZE_REG_n_17,
-      \data_reg[6]_0\(2) => SIZE_REG_n_18,
-      \data_reg[6]_0\(1) => SIZE_REG_n_19,
-      \data_reg[6]_0\(0) => SIZE_REG_n_20,
-      \data_reg[6]_1\(3) => SIZE_REG_n_37,
-      \data_reg[6]_1\(2) => SIZE_REG_n_38,
-      \data_reg[6]_1\(1) => SIZE_REG_n_39,
-      \data_reg[6]_1\(0) => SIZE_REG_n_40,
+      \data_reg[6]_0\(3) => SIZE_REG_n_20,
+      \data_reg[6]_0\(2) => SIZE_REG_n_21,
+      \data_reg[6]_0\(1) => SIZE_REG_n_22,
+      \data_reg[6]_0\(0) => SIZE_REG_n_23,
+      \data_reg[6]_1\(3) => SIZE_REG_n_39,
+      \data_reg[6]_1\(2) => SIZE_REG_n_40,
+      \data_reg[6]_1\(1) => SIZE_REG_n_41,
+      \data_reg[6]_1\(0) => SIZE_REG_n_42,
       i_data_10(15 downto 0) => i_data_10(15 downto 0)
     );
 TEMP_VALUE_REG: entity work.reg_sll_8_bit
@@ -4262,10 +4256,10 @@ eqOp_carry: unisim.vcomponents.CARRY4
       CYINIT => '1',
       DI(3 downto 0) => B"0000",
       O(3 downto 0) => NLW_eqOp_carry_O_UNCONNECTED(3 downto 0),
-      S(3) => PIXEL_COUNTER_n_17,
-      S(2) => PIXEL_COUNTER_n_18,
-      S(1) => PIXEL_COUNTER_n_19,
-      S(0) => SIZE_REG_n_28
+      S(3) => PIXEL_COUNTER_n_16,
+      S(2) => PIXEL_COUNTER_n_17,
+      S(1) => PIXEL_COUNTER_n_18,
+      S(0) => PIXEL_COUNTER_n_19
     );
 \eqOp_carry__0\: unisim.vcomponents.CARRY4
      port map (
@@ -4277,7 +4271,7 @@ eqOp_carry: unisim.vcomponents.CARRY4
       DI(3 downto 0) => B"0000",
       O(3 downto 0) => \NLW_eqOp_carry__0_O_UNCONNECTED\(3 downto 0),
       S(3 downto 2) => B"00",
-      S(1) => SIZE_REG_n_45,
+      S(1) => SIZE_REG_n_47,
       S(0) => PIXEL_COUNTER_n_20
     );
 gtOp_carry: unisim.vcomponents.CARRY4
@@ -4316,108 +4310,113 @@ ltOp_carry: unisim.vcomponents.CARRY4
       S(1) => MIN_VALUE_REG_n_2,
       S(0) => MIN_VALUE_REG_n_3
     );
-\minusOp__0_carry\: unisim.vcomponents.CARRY4
+minusOp_carry: unisim.vcomponents.CARRY4
      port map (
       CI => '0',
-      CO(3) => \minusOp__0_carry_n_0\,
-      CO(2) => \minusOp__0_carry_n_1\,
-      CO(1) => \minusOp__0_carry_n_2\,
-      CO(0) => \minusOp__0_carry_n_3\,
+      CO(3) => minusOp_carry_n_0,
+      CO(2) => minusOp_carry_n_1,
+      CO(1) => minusOp_carry_n_2,
+      CO(0) => minusOp_carry_n_3,
+      CYINIT => '1',
+      DI(3) => MAX_VALUE_REG_n_8,
+      DI(2) => MAX_VALUE_REG_n_9,
+      DI(1) => MAX_VALUE_REG_n_10,
+      DI(0) => MAX_VALUE_REG_n_11,
+      O(3 downto 0) => delta_value(3 downto 0),
+      S(3) => MAX_VALUE_REG_n_24,
+      S(2) => MAX_VALUE_REG_n_25,
+      S(1) => MAX_VALUE_REG_n_26,
+      S(0) => MAX_VALUE_REG_n_27
+    );
+\minusOp_carry__0\: unisim.vcomponents.CARRY4
+     port map (
+      CI => minusOp_carry_n_0,
+      CO(3) => \NLW_minusOp_carry__0_CO_UNCONNECTED\(3),
+      CO(2) => \minusOp_carry__0_n_1\,
+      CO(1) => \minusOp_carry__0_n_2\,
+      CO(0) => \minusOp_carry__0_n_3\,
+      CYINIT => '0',
+      DI(3) => '0',
+      DI(2) => MAX_VALUE_REG_n_5,
+      DI(1) => MAX_VALUE_REG_n_6,
+      DI(0) => MAX_VALUE_REG_n_7,
+      O(3 downto 0) => delta_value(7 downto 4),
+      S(3) => MAX_VALUE_REG_n_20,
+      S(2) => MAX_VALUE_REG_n_21,
+      S(1) => MAX_VALUE_REG_n_22,
+      S(0) => MAX_VALUE_REG_n_23
+    );
+\minusOp_inferred__0/i___0_carry\: unisim.vcomponents.CARRY4
+     port map (
+      CI => '0',
+      CO(3) => \minusOp_inferred__0/i___0_carry_n_0\,
+      CO(2) => \minusOp_inferred__0/i___0_carry_n_1\,
+      CO(1) => \minusOp_inferred__0/i___0_carry_n_2\,
+      CO(0) => \minusOp_inferred__0/i___0_carry_n_3\,
       CYINIT => '1',
       DI(3) => SIZE_REG_n_0,
       DI(2) => SIZE_REG_n_1,
       DI(1) => SIZE_REG_n_2,
       DI(0) => SIZE_REG_n_3,
       O(3 downto 0) => minusOp(3 downto 0),
-      S(3) => SIZE_REG_n_33,
-      S(2) => SIZE_REG_n_34,
-      S(1) => SIZE_REG_n_35,
-      S(0) => SIZE_REG_n_36
+      S(3) => SIZE_REG_n_35,
+      S(2) => SIZE_REG_n_36,
+      S(1) => SIZE_REG_n_37,
+      S(0) => SIZE_REG_n_38
     );
-\minusOp__0_carry__0\: unisim.vcomponents.CARRY4
+\minusOp_inferred__0/i___0_carry__0\: unisim.vcomponents.CARRY4
      port map (
-      CI => \minusOp__0_carry_n_0\,
-      CO(3) => \minusOp__0_carry__0_n_0\,
-      CO(2) => \minusOp__0_carry__0_n_1\,
-      CO(1) => \minusOp__0_carry__0_n_2\,
-      CO(0) => \minusOp__0_carry__0_n_3\,
+      CI => \minusOp_inferred__0/i___0_carry_n_0\,
+      CO(3) => \minusOp_inferred__0/i___0_carry__0_n_0\,
+      CO(2) => \minusOp_inferred__0/i___0_carry__0_n_1\,
+      CO(1) => \minusOp_inferred__0/i___0_carry__0_n_2\,
+      CO(0) => \minusOp_inferred__0/i___0_carry__0_n_3\,
       CYINIT => '0',
-      DI(3) => SIZE_REG_n_17,
-      DI(2) => SIZE_REG_n_18,
-      DI(1) => SIZE_REG_n_19,
-      DI(0) => SIZE_REG_n_20,
+      DI(3) => SIZE_REG_n_20,
+      DI(2) => SIZE_REG_n_21,
+      DI(1) => SIZE_REG_n_22,
+      DI(0) => SIZE_REG_n_23,
       O(3 downto 0) => minusOp(7 downto 4),
-      S(3) => SIZE_REG_n_37,
-      S(2) => SIZE_REG_n_38,
-      S(1) => SIZE_REG_n_39,
-      S(0) => SIZE_REG_n_40
+      S(3) => SIZE_REG_n_39,
+      S(2) => SIZE_REG_n_40,
+      S(1) => SIZE_REG_n_41,
+      S(0) => SIZE_REG_n_42
     );
-\minusOp__0_carry__1\: unisim.vcomponents.CARRY4
+\minusOp_inferred__0/i___0_carry__1\: unisim.vcomponents.CARRY4
      port map (
-      CI => \minusOp__0_carry__0_n_0\,
-      CO(3) => \minusOp__0_carry__1_n_0\,
-      CO(2) => \minusOp__0_carry__1_n_1\,
-      CO(1) => \minusOp__0_carry__1_n_2\,
-      CO(0) => \minusOp__0_carry__1_n_3\,
+      CI => \minusOp_inferred__0/i___0_carry__0_n_0\,
+      CO(3) => \minusOp_inferred__0/i___0_carry__1_n_0\,
+      CO(2) => \minusOp_inferred__0/i___0_carry__1_n_1\,
+      CO(1) => \minusOp_inferred__0/i___0_carry__1_n_2\,
+      CO(0) => \minusOp_inferred__0/i___0_carry__1_n_3\,
       CYINIT => '0',
-      DI(3) => SIZE_REG_n_21,
-      DI(2) => SIZE_REG_n_22,
-      DI(1) => SIZE_REG_n_23,
-      DI(0) => SIZE_REG_n_24,
-      O(3 downto 0) => minusOp(11 downto 8),
-      S(3) => SIZE_REG_n_41,
-      S(2) => SIZE_REG_n_42,
-      S(1) => SIZE_REG_n_43,
-      S(0) => SIZE_REG_n_44
-    );
-\minusOp__0_carry__2\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \minusOp__0_carry__1_n_0\,
-      CO(3) => \NLW_minusOp__0_carry__2_CO_UNCONNECTED\(3),
-      CO(2) => \minusOp__0_carry__2_n_1\,
-      CO(1) => \minusOp__0_carry__2_n_2\,
-      CO(0) => \minusOp__0_carry__2_n_3\,
-      CYINIT => '0',
-      DI(3) => '0',
+      DI(3) => SIZE_REG_n_24,
       DI(2) => SIZE_REG_n_25,
       DI(1) => SIZE_REG_n_26,
       DI(0) => SIZE_REG_n_27,
-      O(3 downto 0) => minusOp(15 downto 12),
-      S(3) => SIZE_REG_n_29,
-      S(2) => SIZE_REG_n_30,
-      S(1) => SIZE_REG_n_31,
-      S(0) => SIZE_REG_n_32
+      O(3 downto 0) => minusOp(11 downto 8),
+      S(3) => SIZE_REG_n_43,
+      S(2) => SIZE_REG_n_44,
+      S(1) => SIZE_REG_n_45,
+      S(0) => SIZE_REG_n_46
     );
-\minusOp_inferred__0/i__carry\: unisim.vcomponents.CARRY4
+\minusOp_inferred__0/i___0_carry__2\: unisim.vcomponents.CARRY4
      port map (
-      CI => '0',
-      CO(3) => \minusOp_inferred__0/i__carry_n_0\,
-      CO(2) => \minusOp_inferred__0/i__carry_n_1\,
-      CO(1) => \minusOp_inferred__0/i__carry_n_2\,
-      CO(0) => \minusOp_inferred__0/i__carry_n_3\,
-      CYINIT => '1',
-      DI(3 downto 0) => i_data_IBUF(3 downto 0),
-      O(3 downto 0) => minusOp0_out(3 downto 0),
-      S(3) => MIN_VALUE_REG_n_24,
-      S(2) => MIN_VALUE_REG_n_25,
-      S(1) => MIN_VALUE_REG_n_26,
-      S(0) => MIN_VALUE_REG_n_27
-    );
-\minusOp_inferred__0/i__carry__0\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \minusOp_inferred__0/i__carry_n_0\,
-      CO(3) => \NLW_minusOp_inferred__0/i__carry__0_CO_UNCONNECTED\(3),
-      CO(2) => \minusOp_inferred__0/i__carry__0_n_1\,
-      CO(1) => \minusOp_inferred__0/i__carry__0_n_2\,
-      CO(0) => \minusOp_inferred__0/i__carry__0_n_3\,
+      CI => \minusOp_inferred__0/i___0_carry__1_n_0\,
+      CO(3) => \NLW_minusOp_inferred__0/i___0_carry__2_CO_UNCONNECTED\(3),
+      CO(2) => \minusOp_inferred__0/i___0_carry__2_n_1\,
+      CO(1) => \minusOp_inferred__0/i___0_carry__2_n_2\,
+      CO(0) => \minusOp_inferred__0/i___0_carry__2_n_3\,
       CYINIT => '0',
       DI(3) => '0',
-      DI(2 downto 0) => i_data_IBUF(6 downto 4),
-      O(3 downto 0) => minusOp0_out(7 downto 4),
-      S(3) => MIN_VALUE_REG_n_20,
-      S(2) => MIN_VALUE_REG_n_21,
-      S(1) => MIN_VALUE_REG_n_22,
-      S(0) => MIN_VALUE_REG_n_23
+      DI(2) => SIZE_REG_n_28,
+      DI(1) => SIZE_REG_n_29,
+      DI(0) => SIZE_REG_n_30,
+      O(3 downto 0) => minusOp(15 downto 12),
+      S(3) => SIZE_REG_n_31,
+      S(2) => SIZE_REG_n_32,
+      S(1) => SIZE_REG_n_33,
+      S(0) => SIZE_REG_n_34
     );
 \minusOp_inferred__1/i__carry\: unisim.vcomponents.CARRY4
      port map (
@@ -4427,15 +4426,12 @@ ltOp_carry: unisim.vcomponents.CARRY4
       CO(1) => \minusOp_inferred__1/i__carry_n_2\,
       CO(0) => \minusOp_inferred__1/i__carry_n_3\,
       CYINIT => '1',
-      DI(3) => MAX_VALUE_REG_n_8,
-      DI(2) => MAX_VALUE_REG_n_9,
-      DI(1) => MAX_VALUE_REG_n_10,
-      DI(0) => MAX_VALUE_REG_n_11,
-      O(3 downto 0) => delta_value(3 downto 0),
-      S(3) => MAX_VALUE_REG_n_22,
-      S(2) => MAX_VALUE_REG_n_23,
-      S(1) => MAX_VALUE_REG_n_24,
-      S(0) => MAX_VALUE_REG_n_25
+      DI(3 downto 0) => i_data_IBUF(3 downto 0),
+      O(3 downto 0) => minusOp0_out(3 downto 0),
+      S(3) => MIN_VALUE_REG_n_24,
+      S(2) => MIN_VALUE_REG_n_25,
+      S(1) => MIN_VALUE_REG_n_26,
+      S(0) => MIN_VALUE_REG_n_27
     );
 \minusOp_inferred__1/i__carry__0\: unisim.vcomponents.CARRY4
      port map (
@@ -4446,14 +4442,12 @@ ltOp_carry: unisim.vcomponents.CARRY4
       CO(0) => \minusOp_inferred__1/i__carry__0_n_3\,
       CYINIT => '0',
       DI(3) => '0',
-      DI(2) => MAX_VALUE_REG_n_5,
-      DI(1) => MAX_VALUE_REG_n_6,
-      DI(0) => MAX_VALUE_REG_n_7,
-      O(3 downto 0) => delta_value(7 downto 4),
-      S(3) => MAX_VALUE_REG_n_18,
-      S(2) => MAX_VALUE_REG_n_19,
-      S(1) => MAX_VALUE_REG_n_20,
-      S(0) => MAX_VALUE_REG_n_21
+      DI(2 downto 0) => i_data_IBUF(6 downto 4),
+      O(3 downto 0) => minusOp0_out(7 downto 4),
+      S(3) => MIN_VALUE_REG_n_20,
+      S(2) => MIN_VALUE_REG_n_21,
+      S(1) => MIN_VALUE_REG_n_22,
+      S(0) => MIN_VALUE_REG_n_23
     );
 \multOp__0_carry\: unisim.vcomponents.CARRY4
      port map (
@@ -4866,7 +4860,7 @@ plusOp_carry: unisim.vcomponents.CARRY4
       DI(0) => '0',
       O(3 downto 0) => i_data_10(3 downto 0),
       S(3 downto 2) => data_reg(3 downto 2),
-      S(1) => PIXEL_COUNTER_n_16,
+      S(1) => PIXEL_COUNTER_n_21,
       S(0) => data_reg(0)
     );
 \plusOp_carry__0\: unisim.vcomponents.CARRY4

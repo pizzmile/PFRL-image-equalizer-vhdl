@@ -76,7 +76,7 @@ architecture Behavioral of datapath is
 		i_rst : in STD_LOGIC;
 		i_load : in STD_LOGIC;
 		i_data : in STD_LOGIC_VECTOR(7 downto 0);
-		o_data : out STD_LOGIC_VECTOR(8 downto 0)
+		o_data : out STD_LOGIC_VECTOR(7 downto 0)
 	  );
 	end component reg_sll_8_bit;
 	
@@ -137,7 +137,7 @@ architecture Behavioral of datapath is
     signal shift_level : STD_LOGIC_VECTOR(3 downto 0) := "0000";
 	signal shift_count : STD_LOGIC_VECTOR(3 downto 0) := "0000";
 	signal temp_value_sub : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
-	signal temp_value : STD_LOGIC_VECTOR(8 downto 0) := "000000000";
+	-- signal temp_value : STD_LOGIC_VECTOR(8 downto 0) := "000000000";
 
 begin
 	
@@ -252,10 +252,9 @@ begin
 		i_rst => i_rst,
 		i_load => temp_value_load,
 		i_data => temp_value_sub,
-		o_data => temp_value
+		o_data => o_data
 	);
 	
-	o_data <= temp_value(7 downto 0) when temp_value < "011111111" else "11111111";
 	
 	
 end Behavioral;

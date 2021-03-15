@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/User/OneDrive - Politecnico di Milano/Documenti/GitHub/prova_finale_reti_logiche/project_reti_logiche/project_reti_logiche.runs/synth_1'
+HD_PWD='C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

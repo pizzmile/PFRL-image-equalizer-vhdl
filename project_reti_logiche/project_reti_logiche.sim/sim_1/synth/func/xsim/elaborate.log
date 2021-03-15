@@ -13,6 +13,7 @@ Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_textio
 Compiling package unisim.vcomponents
 Compiling package ieee.vital_timing
 Compiling package ieee.vital_primitives
@@ -22,8 +23,14 @@ Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
 Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11101010")(0,7)\]
 Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00001110")(0,7)\]
 Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10111000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
 Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01111111111111111111...]
 Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1110")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00101010101010101010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
 Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000001")(0,7)\]
 Compiling architecture fdce_v of entity unisim.FDCE [fdce_default]
 Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010111100000010")(0...]
@@ -45,7 +52,7 @@ Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="011100000000000
 Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11100011011111110111...]
 Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000111011101110111...]
 Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0111100010001000")(0...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010110100110011001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10011001011010011001...]
 Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101010100101011001...]
 Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101010100101011001...]
 Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11100101011111110111...]
@@ -81,13 +88,7 @@ Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="111111111111111
 Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110101010101010")(0...]
 Compiling architecture structure of entity xil_defaultlib.counter_4_bit [counter_4_bit_default]
 Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101111111101101111...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111110111011111111...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
 Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000001")(0,7)\]
-Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01111111111111111111...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00101010101010101010...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
 Compiling architecture structure of entity xil_defaultlib.reg_4_bit [reg_4_bit_default]
 Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
 Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11111110")(0,7)\]

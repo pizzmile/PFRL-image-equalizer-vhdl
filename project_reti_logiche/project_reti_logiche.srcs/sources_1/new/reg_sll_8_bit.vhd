@@ -9,7 +9,7 @@ entity reg_sll_8_bit is
     i_rst : in STD_LOGIC;
     i_load : in STD_LOGIC;
     i_data : in STD_LOGIC_VECTOR(7 downto 0);
-    o_data : out STD_LOGIC_VECTOR(8 downto 0)
+    o_data : out STD_LOGIC_VECTOR(7 downto 0)
   );
 end reg_sll_8_bit;
 
@@ -24,8 +24,8 @@ begin
         	data <= "000000000"; 
         elsif (i_clk'event and i_clk = '1') then 
         	if (i_load = '1') then
-        	   data(8) <= '0';
             	data(7 downto 0) <= i_data;
+            	data(8) <= '0';
             elsif (i_load = '0') then
             	data(8 downto 1) <= data(7 downto 0);
                 data(0) <= '0';
@@ -34,6 +34,6 @@ begin
     end process;
 	
     -- assegna il contenuto del registro all'uscita
-    o_data <= data;
+    o_data <= data(7 downto 0) when data < "011111111" else "11111111";
     
 end Behavioral;
