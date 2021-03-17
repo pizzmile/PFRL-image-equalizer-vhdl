@@ -8,6 +8,7 @@ entity datapath is
     	i_clk : in STD_LOGIC;
         i_rst : in STD_LOGIC;
         i_data : in STD_LOGIC_VECTOR(7 downto 0);
+        reg_rst : in STD_LOGIC;
     	n_col_load : in STD_LOGIC;
         size_load : in STD_LOGIC;
         pixel_counter_rst : in STD_LOGIC;
@@ -116,7 +117,7 @@ begin
 	
     N_COL_REG : reg_8_bit port map(
     	i_clk => i_clk,
-        i_rst => i_rst,
+        i_rst => reg_rst,
         i_load => n_col_load,
         i_data => i_data,
         o_data => n_col
@@ -126,7 +127,7 @@ begin
 	
 	SIZE_REG : reg_16_bit port map(
 		i_clk => i_clk,
-		i_rst => i_rst,
+		i_rst => reg_rst,
 		i_load => size_load,
 		i_data => size_prod,
 		o_data => size
@@ -158,7 +159,7 @@ begin
 	
 	MAX_VALUE_REG : reg_8_bit port map(
 		i_clk => i_clk,
-		i_rst => i_rst,
+		i_rst => reg_rst,
 		i_load => max_value_load,
 		i_data => max_comp_out,
 		o_data => max_value
@@ -168,7 +169,7 @@ begin
 	
 	MIN_VALUE_REG : reg_8_bit_h port map(
 		i_clk => i_clk,
-		i_rst => i_rst,
+		i_rst => reg_rst,
 		i_load => min_value_load,
 		i_data => min_comp_out,
 		o_data => min_value
@@ -203,7 +204,7 @@ begin
 	
 	SHIFT_MULT_REG : reg_9_bit port map(
 		i_clk => i_clk,
-		i_rst => i_rst,
+		i_rst => reg_rst,
 		i_load => shift_mult_load,
 		i_data => shift_mult_calc_out,
 		o_data => shift_mult

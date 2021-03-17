@@ -30,6 +30,6 @@ begin
     end process;
 	
     -- assegna il contenuto del registro all'uscita
-    o_data <= data;
+   o_data <= data;
     
 end Behavioral;

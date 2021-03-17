@@ -65,7 +65,7 @@ end process p_CLK_GEN;
 
 
 MEM : process(tb_clk)
-    file read_file : text open read_mode is "C:\Users\User\GitHub\PFRL_pizzamiglio_prisciantelli\Testbench\TB_Salice\Generatore test\ramData1.txt";  --change to the correct path
+    file read_file : text open read_mode is "C:\Users\andre\Documents\GitHub\PFRL_pizzamiglio_prisciantelli\Testbench\TB_Salice\Generatore test\ramData1.txt";  --change to the correct path
     variable read_line : line;
     variable input : integer;
     variable rows : integer;
@@ -105,8 +105,8 @@ end process;
 
 
 test : process is
-    file read_file : text open read_mode is "C:\Users\User\GitHub\PFRL_pizzamiglio_prisciantelli\Testbench\TB_Salice\Generatore test\ramResult1.txt";  --change to the correct path
-    file write_file : text open write_mode is "C:\Users\User\GitHub\PFRL_pizzamiglio_prisciantelli\Testbench\TB_Salice\Generatore test\ramNotPassed.txt";  --change to the correct path
+    file read_file : text open read_mode is "C:\Users\andre\Documents\GitHub\PFRL_pizzamiglio_prisciantelli\Testbench\TB_Salice\Generatore test\ramResult1.txt";  --change to the correct path
+    file write_file : text open write_mode is "C:\Users\andre\Documents\GitHub\PFRL_pizzamiglio_prisciantelli\Testbench\TB_Salice\Generatore test\ramNotPassed.txt";  --change to the correct path
     variable write_line : line;
     variable read_line : line;
     variable result : integer;

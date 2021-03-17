@@ -44,6 +44,7 @@ architecture Behavioral of project_reti_logiche is
             i_clk : in STD_LOGIC;
             i_rst : in STD_LOGIC;
             i_data : in STD_LOGIC_VECTOR(7 downto 0);
+            reg_rst : in STD_LOGIC;
             n_col_load : in STD_LOGIC;
             size_load : in STD_LOGIC;
             pixel_counter_rst : in STD_LOGIC;
@@ -60,6 +61,7 @@ architecture Behavioral of project_reti_logiche is
         );
     end component datapath;
     
+    signal reg_rst : STD_LOGIC := '0';
     signal n_col_load : STD_LOGIC := '0';
     signal size_load : STD_LOGIC := '0';
     signal pixel_counter_rst : STD_LOGIC := '0';
@@ -97,6 +99,7 @@ begin
 	   i_data => i_data,
 	   o_data => o_data,
 	   o_address => o_address,
+	   reg_rst => reg_rst,
 	   n_col_load=> n_col_load,
        size_load=> size_load,
        pixel_counter_rst=> pixel_counter_rst,
@@ -180,6 +183,7 @@ begin
 		o_en <= '1';
 		o_we <= '0';
 		o_done <= '0';
+		reg_rst <= '0';
 		n_col_load <= '0';
 		size_load <= '0';
 		pixel_counter_rst <= '0';
@@ -199,6 +203,7 @@ begin
                 min_value_load <= '1';
                 pixel_counter_rst <= '1';
                 pixel_counter_en <= '1';
+                reg_rst <= '1'; 
             when REQ_N_COL =>
                 o_en <= '1';
                 o_we <= '0';

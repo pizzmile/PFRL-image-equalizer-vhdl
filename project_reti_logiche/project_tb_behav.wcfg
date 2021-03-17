@@ -10,13 +10,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="157916fs"></ZoomStartTime>
-      <ZoomEndTime time="1105417fs"></ZoomEndTime>
-      <Cursor1Time time="947500fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="752501fs"></ZoomEndTime>
+      <Cursor1Time time="947fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="340"></NameColumnWidth>
-      <ValueColumnWidth column_width="155"></ValueColumnWidth>
+      <NameColumnWidth column_width="339"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="17" />
    <wvobject fp_name="/project_tb/tb_done" type="logic">
@@ -76,15 +76,15 @@
       <obj_property name="ObjectShortName">delta_value[7:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/project_tb/UUT/DATAPATH0/temp_value" type="array">
-      <obj_property name="ElementShortName">temp_value[8:0]</obj_property>
-      <obj_property name="ObjectShortName">temp_value[8:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/project_tb/UUT/DATAPATH0/shift_level" type="array">
-      <obj_property name="ElementShortName">shift_level[3:0]</obj_property>
-      <obj_property name="ObjectShortName">shift_level[3:0]</obj_property>
+      <obj_property name="ElementShortName">temp_value[16:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_value[16:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/project_tb/UUT/DATAPATH0/o_data" type="array">
       <obj_property name="ElementShortName">o_data[7:0]</obj_property>
       <obj_property name="ObjectShortName">o_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/project_tb/UUT/DATAPATH0/delta_value" type="array">
+      <obj_property name="ElementShortName">delta_value[7:0]</obj_property>
+      <obj_property name="ObjectShortName">delta_value[7:0]</obj_property>
    </wvobject>
 </wave_config>

@@ -86,14 +86,12 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
   C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/counter_16_bit.vhd
-  C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/counter_4_bit.vhd
   C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/datapath.vhd
   C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/mux_4_1_16_bit.vhd
   C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/reg_16_bit.vhd
-  C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/reg_4_bit.vhd
   C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/reg_8_bit.vhd
   C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/reg_8_bit_h.vhd
-  C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/reg_sll_8_bit.vhd
+  C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/reg_9_bit.vhd
   C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
 }
 OPTRACE "Adding files" END { }

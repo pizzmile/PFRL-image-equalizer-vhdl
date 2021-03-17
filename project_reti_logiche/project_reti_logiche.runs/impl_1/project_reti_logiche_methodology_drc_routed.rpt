@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Mon Mar 15 17:50:14 2021
+| Date         : Wed Mar 17 18:42:49 2021
 | Host         : DESKTOP-D7FT5L0 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file project_reti_logiche_methodology_drc_routed.rpt -pb project_reti_logiche_methodology_drc_routed.pb -rpx project_reti_logiche_methodology_drc_routed.rpx
 | Design       : project_reti_logiche
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 39
+             Violations found: 38
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| LUTAR-1   | Warning  | LUT drives async reset alert  | 2          |
+| LUTAR-1   | Warning  | LUT drives async reset alert  | 1          |
 | TIMING-18 | Warning  | Missing input or output delay | 37         |
 +-----------+----------+-------------------------------+------------+
 
@@ -50,14 +50,6 @@ DATAPATH0/PIXEL_COUNTER/data_reg[5]/CLR,
 DATAPATH0/PIXEL_COUNTER/data_reg[6]/CLR,
 DATAPATH0/PIXEL_COUNTER/data_reg[7]/CLR,
 DATAPATH0/PIXEL_COUNTER/data_reg[8]/CLR (the first 15 of 16 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#2 Warning
-LUT drives async reset alert  
-LUT cell DATAPATH0/SHIFT_COUNTER/data[3]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) DATAPATH0/SHIFT_COUNTER/data_reg[0]/CLR,
-DATAPATH0/SHIFT_COUNTER/data_reg[1]/CLR,
-DATAPATH0/SHIFT_COUNTER/data_reg[2]/CLR
-DATAPATH0/SHIFT_COUNTER/data_reg[3]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 TIMING-18#1 Warning

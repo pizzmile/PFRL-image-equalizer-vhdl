@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Mon Mar 15 17:50:15 2021
+| Date             : Wed Mar 17 18:42:49 2021
 | Host             : DESKTOP-D7FT5L0 running 64-bit major release  (build 9200)
 | Command          : report_power -file project_reti_logiche_power_routed.rpt -pb project_reti_logiche_power_summary_routed.pb -rpx project_reti_logiche_power_routed.rpx
 | Design           : project_reti_logiche
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.131        |
+| Total On-Chip Power (W)  | 0.132        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.000        |
+| Dynamic (W)              | 0.001        |
 | Device Static (W)        | 0.131        |
 | Effective TJA (C/W)      | 2.5          |
 | Max Ambient (C)          | 84.7         |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      371 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      182 |    133800 |            0.14 |
-|   CARRY4       |    <0.001 |       30 |     33450 |            0.09 |
-|   Register     |    <0.001 |       87 |    267600 |            0.03 |
-|   Others       |     0.000 |        5 |       --- |             --- |
-| Signals        |    <0.001 |      285 |       --- |             --- |
+| Slice Logic    |    <0.001 |      446 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      247 |    133800 |            0.18 |
+|   CARRY4       |    <0.001 |       40 |     33450 |            0.12 |
+|   Register     |    <0.001 |       77 |    267600 |            0.03 |
+|   Others       |     0.000 |        4 |       --- |             --- |
+| Signals        |    <0.001 |      363 |       --- |             --- |
 | I/O            |    <0.001 |       38 |       285 |           13.33 |
 | Static Power   |     0.131 |          |           |                 |
-| Total          |     0.131 |          |           |                 |
+| Total          |     0.132 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -137,8 +137,10 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------+-----------+
-| Name | Power (W) |
-+------+-----------+
++----------------------+-----------+
+| Name                 | Power (W) |
++----------------------+-----------+
+| project_reti_logiche |     0.001 |
++----------------------+-----------+
 
 
