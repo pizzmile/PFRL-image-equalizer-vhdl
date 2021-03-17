@@ -1,0 +1,11 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/project_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_16_bit'
+INFO: [VRFC 10-3107] analyzing entity 'reg_16_bit'
+INFO: [VRFC 10-3107] analyzing entity 'reg_8_bit'
+INFO: [VRFC 10-3107] analyzing entity 'reg_8_bit_0'
+INFO: [VRFC 10-3107] analyzing entity 'reg_8_bit_h'
+INFO: [VRFC 10-3107] analyzing entity 'reg_9_bit'
+INFO: [VRFC 10-3107] analyzing entity 'datapath'
+INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/TB5/test_finale.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_tb'

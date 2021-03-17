@@ -1,0 +1,133 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar 15 17:57:16 2021
+# Process ID: 15344
+# Current directory: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13404 C:\Users\andre\Documents\GitHub\PFRL_pizzamiglio_prisciantelli\project_reti_logiche\project_reti_logiche.xpr
+# Log file: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/vivado.log
+# Journal file: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.xpr
+update_compile_order -fileset sources_1
+open_run impl_1
+reoport_utilisation
+report_utilization
+report_timing
+launch_simulation -mode post-implementation -type functional
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_func_synth.wcfg
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_behav.wcfg
+source project_tb.tcl
+run all
+launch_simulation
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_func_synth.wcfg
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_behav.wcfg
+source project_tb.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_func_synth.wcfg
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_behav.wcfg
+source project_tb.tcl
+run all
+close_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_func_synth.wcfg
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_behav.wcfg
+source project_tb.tcl
+run all
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_func_synth.wcfg
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_behav.wcfg
+source project_tb.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_func_synth.wcfg
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_behav.wcfg
+source project_tb.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_func_synth.wcfg
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_behav.wcfg
+source project_tb.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_func_synth.wcfg
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_behav.wcfg
+source project_tb.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/andre/Downloads/tb_2x2.vhd
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_func_synth.wcfg
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_behav.wcfg
+source project_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_func_synth.wcfg
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_behav.wcfg
+source project_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top project_tb [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_func_synth.wcfg
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_behav.wcfg
+source project_tb.tcl
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Downloads/tb_2x2.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/andre/Downloads/tb_2x2.vhd
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_func_synth.wcfg
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_behav.wcfg
+source project_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_func_synth.wcfg
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_behav.wcfg
+source project_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_func_synth.wcfg
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_behav.wcfg
+source project_tb.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_func_synth.wcfg
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_behav.wcfg
+source project_tb.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_func_synth.wcfg
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_behav.wcfg
+source project_tb.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_func_synth.wcfg
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_behav.wcfg
+source project_tb.tcl
+close_sim

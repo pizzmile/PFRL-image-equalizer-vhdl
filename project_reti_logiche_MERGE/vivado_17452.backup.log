@@ -1,0 +1,524 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar 15 17:34:04 2021
+# Process ID: 17452
+# Current directory: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11680 C:\Users\andre\Documents\GitHub\PFRL_pizzamiglio_prisciantelli\project_reti_logiche\project_reti_logiche.xpr
+# Log file: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/vivado.log
+# Journal file: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche'
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd}}
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd}}
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB4/threeConsecutiveRunsAndResetOnFirstRun.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB3/test_bench.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/ProgettoREL/tb_2x2.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB1/rst_asincrono.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB1/tbl5_delta.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/Generato128_128_1.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/Generato128_128_2.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/Generato128_128_3.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/PixelIncremento2n.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/PixelTutti1.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/PixelTutti255.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/Test3Immagini.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/TestFornito.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/TestFornito2.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/TestFornitoDoppio.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/UnPixel.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/ZeroPixel.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB4/maxDimOneRun.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB4/simpleTestOneRun.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/1_pixel.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/Test_128_128.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/Test_es_1.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/Test_es_2.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/Test_es_3.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/Test_es_4.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/Test_es_5.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/min_max_last.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/multi_start.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/reset.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/test_0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/test_0_255.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/test_255.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/test_finale.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB4/threeConsecutiveRunsAndResetOnFirstRun.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB3/test_bench.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/ProgettoREL/tb_2x2.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB1/rst_asincrono.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB1/tbl5_delta.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/Generato128_128_1.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/Generato128_128_2.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/Generato128_128_3.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/PixelIncremento2n.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/PixelTutti1.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/PixelTutti255.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/Test3Immagini.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/TestFornito.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/TestFornito2.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/TestFornitoDoppio.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/UnPixel.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB2/ZeroPixel.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB4/maxDimOneRun.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB4/simpleTestOneRun.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/1_pixel.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/Test_128_128.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/Test_es_1.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/Test_es_2.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/Test_es_3.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/Test_es_4.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/Test_es_5.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/min_max_last.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/multi_start.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/reset.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/test_0.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/test_0_255.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/test_255.vhd C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sim_1/imports/TB_Salice/TB5/test_finale.vhd}
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/mux_2_1_8_bit.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/mux_2_1_8_bit.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd}}
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/datapath.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/datapath.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.reg_8_bit [reg_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_16_bit [reg_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_16_bit [counter_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4_1_16_bit [mux_4_1_16_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_8_bit_h [reg_8_bit_h_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_4_bit [reg_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_4_bit [counter_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_sll_8_bit [reg_sll_8_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_behav -key {Behavioral:sim_1:Functional:project_tb} -tclbatch {project_tb.tcl} -view {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_func_synth.wcfg} -view {C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_func_synth.wcfg
+open_wave_config C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_tb_behav.wcfg
+source project_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: TEST 1
+Time: 230 ns  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1015.246 ; gain = 0.000
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run all
+Note: TEST 2
+Time: 117242500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd
+Note: TEST 3
+Time: 159017500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd
+Note: TEST 4
+Time: 872192500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd
+Note: TEST 5
+Time: 1062287500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd
+Note: TEST 6
+Time: 1381082500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd
+Note: TEST 7
+Time: 1928657500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd
+Note: TEST 8
+Time: 1966832500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd
+Note: TEST 9
+Time: 2068007500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd
+Note: TEST 10
+Time: 2378582500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd
+Note: TEST 11
+Time: 2558537500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd
+Note: TEST 12
+Time: 2605352500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd
+Note: TEST 13
+Time: 2732447500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd
+Note: TEST 14
+Time: 2919302500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd
+Note: TEST 15
+Time: 3229757500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd
+Failure: Simulation Ended!
+Time: 3250532500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd
+$finish called at time : 3250532500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd" Line 155
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Mon Mar 15 17:39:55 2021] Launched synth_1...
+Run output will be captured here: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Mon Mar 15 17:40:34 2021] Launched impl_1...
+Run output will be captured here: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2113.852 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 2279.301 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 2279.301 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2279.301 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 2446.629 ; gain = 332.777
+report_utilization
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Mar 15 17:42:33 2021
+| Host         : DESKTOP-D7FT5L0 running 64-bit major release  (build 9200)
+| Command      : report_utilization
+| Design       : counter_16_bit
+| Device       : 7a200tfbg484-1
+| Design State : Routed
+------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Slice Logic
+1.1 Summary of Registers by Type
+2. Slice Logic Distribution
+3. Memory
+4. DSP
+5. IO and GT Specific
+6. Clocking
+7. Specific Feature
+8. Primitives
+9. Black Boxes
+10. Instantiated Netlists
+
+1. Slice Logic
+--------------
+
++-------------------------+------+-------+-----------+-------+
+|        Site Type        | Used | Fixed | Available | Util% |
++-------------------------+------+-------+-----------+-------+
+| Slice LUTs              |    1 |     0 |    134600 | <0.01 |
+|   LUT as Logic          |    1 |     0 |    134600 | <0.01 |
+|   LUT as Memory         |    0 |     0 |     46200 |  0.00 |
+| Slice Registers         |   16 |     0 |    269200 | <0.01 |
+|   Register as Flip Flop |   16 |     0 |    269200 | <0.01 |
+|   Register as Latch     |    0 |     0 |    269200 |  0.00 |
+| F7 Muxes                |    0 |     0 |     67300 |  0.00 |
+| F8 Muxes                |    0 |     0 |     33650 |  0.00 |
++-------------------------+------+-------+-----------+-------+
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++-------+--------------+-------------+--------------+
+| Total | Clock Enable | Synchronous | Asynchronous |
++-------+--------------+-------------+--------------+
+| 0     |            _ |           - |            - |
+| 0     |            _ |           - |          Set |
+| 0     |            _ |           - |        Reset |
+| 0     |            _ |         Set |            - |
+| 0     |            _ |       Reset |            - |
+| 0     |          Yes |           - |            - |
+| 0     |          Yes |           - |          Set |
+| 16    |          Yes |           - |        Reset |
+| 0     |          Yes |         Set |            - |
+| 0     |          Yes |       Reset |            - |
++-------+--------------+-------------+--------------+
+
+
+2. Slice Logic Distribution
+---------------------------
+
++------------------------------------------+------+-------+-----------+-------+
+|                 Site Type                | Used | Fixed | Available | Util% |
++------------------------------------------+------+-------+-----------+-------+
+| Slice                                    |    4 |     0 |     33650 |  0.01 |
+|   SLICEL                                 |    4 |     0 |           |       |
+|   SLICEM                                 |    0 |     0 |           |       |
+| LUT as Logic                             |    1 |     0 |    134600 | <0.01 |
+|   using O5 output only                   |    0 |       |           |       |
+|   using O6 output only                   |    1 |       |           |       |
+|   using O5 and O6                        |    0 |       |           |       |
+| LUT as Memory                            |    0 |     0 |     46200 |  0.00 |
+|   LUT as Distributed RAM                 |    0 |     0 |           |       |
+|   LUT as Shift Register                  |    0 |     0 |           |       |
+| Slice Registers                          |   16 |     0 |    269200 | <0.01 |
+|   Register driven from within the Slice  |   16 |       |           |       |
+|   Register driven from outside the Slice |    0 |       |           |       |
+| Unique Control Sets                      |    1 |       |     33650 | <0.01 |
++------------------------------------------+------+-------+-----------+-------+
+* * Note: Available Control Sets calculated as Slice * 1, Review the Control Sets Report for more information regarding control sets.
+
+
+3. Memory
+---------
+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| Block RAM Tile |    0 |     0 |       365 |  0.00 |
+|   RAMB36/FIFO* |    0 |     0 |       365 |  0.00 |
+|   RAMB18       |    0 |     0 |       730 |  0.00 |
++----------------+------+-------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
+
+
+4. DSP
+------
+
++-----------+------+-------+-----------+-------+
+| Site Type | Used | Fixed | Available | Util% |
++-----------+------+-------+-----------+-------+
+| DSPs      |    0 |     0 |       740 |  0.00 |
++-----------+------+-------+-----------+-------+
+
+
+5. IO and GT Specific
+---------------------
+
++-----------------------------+------+-------+-----------+-------+
+|          Site Type          | Used | Fixed | Available | Util% |
++-----------------------------+------+-------+-----------+-------+
+| Bonded IOB                  |   19 |     0 |       285 |  6.67 |
+|   IOB Master Pads           |    9 |       |           |       |
+|   IOB Slave Pads            |    9 |       |           |       |
+| Bonded IPADs                |    0 |     0 |        14 |  0.00 |
+| Bonded OPADs                |    0 |     0 |         8 |  0.00 |
+| PHY_CONTROL                 |    0 |     0 |        10 |  0.00 |
+| PHASER_REF                  |    0 |     0 |        10 |  0.00 |
+| OUT_FIFO                    |    0 |     0 |        40 |  0.00 |
+| IN_FIFO                     |    0 |     0 |        40 |  0.00 |
+| IDELAYCTRL                  |    0 |     0 |        10 |  0.00 |
+| IBUFDS                      |    0 |     0 |       274 |  0.00 |
+| GTPE2_CHANNEL               |    0 |     0 |         4 |  0.00 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |        40 |  0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        40 |  0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       500 |  0.00 |
+| IBUFDS_GTE2                 |    0 |     0 |         2 |  0.00 |
+| ILOGIC                      |    0 |     0 |       285 |  0.00 |
+| OLOGIC                      |    0 |     0 |       285 |  0.00 |
++-----------------------------+------+-------+-----------+-------+
+
+
+6. Clocking
+-----------
+
++------------+------+-------+-----------+-------+
+|  Site Type | Used | Fixed | Available | Util% |
++------------+------+-------+-----------+-------+
+| BUFGCTRL   |    1 |     0 |        32 |  3.13 |
+| BUFIO      |    0 |     0 |        40 |  0.00 |
+| MMCME2_ADV |    0 |     0 |        10 |  0.00 |
+| PLLE2_ADV  |    0 |     0 |        10 |  0.00 |
+| BUFMRCE    |    0 |     0 |        20 |  0.00 |
+| BUFHCE     |    0 |     0 |       120 |  0.00 |
+| BUFR       |    0 |     0 |        40 |  0.00 |
++------------+------+-------+-----------+-------+
+
+
+7. Specific Feature
+-------------------
+
++-------------+------+-------+-----------+-------+
+|  Site Type  | Used | Fixed | Available | Util% |
++-------------+------+-------+-----------+-------+
+| BSCANE2     |    0 |     0 |         4 |  0.00 |
+| CAPTUREE2   |    0 |     0 |         1 |  0.00 |
+| DNA_PORT    |    0 |     0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |         1 |  0.00 |
+| FRAME_ECCE2 |    0 |     0 |         1 |  0.00 |
+| ICAPE2      |    0 |     0 |         2 |  0.00 |
+| PCIE_2_1    |    0 |     0 |         1 |  0.00 |
+| STARTUPE2   |    0 |     0 |         1 |  0.00 |
+| XADC        |    0 |     0 |         1 |  0.00 |
++-------------+------+-------+-----------+-------+
+
+
+8. Primitives
+-------------
+
++----------+------+---------------------+
+| Ref Name | Used | Functional Category |
++----------+------+---------------------+
+| OBUF     |   16 |                  IO |
+| FDCE     |   16 |        Flop & Latch |
+| CARRY4   |    4 |          CarryLogic |
+| IBUF     |    3 |                  IO |
+| LUT1     |    1 |                 LUT |
+| BUFG     |    1 |               Clock |
++----------+------+---------------------+
+
+
+9. Black Boxes
+--------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+10. Instantiated Netlists
+-------------------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2446.629 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/constrs_1/new/clock.xdc]
+Finished Parsing XDC File [C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.srcs/constrs_1/new/clock.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2477.848 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-26] write_vhdl -mode funcsim -nolib -force -file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/project_tb_func_synth.vhd"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/project_tb_func_synth.vhd
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/project_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_16_bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_func_synth xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_func_synth xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3006] 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/xsim.dir/xil_defaultlib/datapath.vdb' needs to be re-saved since 'xil_defaultlib.counter_16_bit' changed
+ERROR: [VRFC 10-3032] 'xil_defaultlib.datapath' failed to restore
+ERROR: [VRFC 10-213] Registering Dependencies Error: The primary unit 'datapath' could not be found during restore
+ERROR: [VRFC 10-3032] 'xil_defaultlib.project_reti_logiche' failed to restore
+ERROR: [VRFC 10-3006] 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/xsim.dir/xil_defaultlib/datapath.vdb' needs to be re-saved since 'xil_defaultlib.counter_16_bit' changed
+ERROR: [VRFC 10-3032] 'xil_defaultlib.datapath' failed to restore
+ERROR: [VRFC 10-213] Registering Dependencies Error: The primary unit 'datapath' could not be found during restore
+ERROR: [VRFC 10-3032] 'xil_defaultlib.project_reti_logiche' failed to restore
+ERROR: [VRFC 10-3006] 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/xsim.dir/xil_defaultlib/datapath.vdb' needs to be re-saved since 'xil_defaultlib.counter_16_bit' changed
+ERROR: [VRFC 10-3032] 'xil_defaultlib.datapath' failed to restore
+ERROR: [VRFC 10-213] Registering Dependencies Error: The primary unit 'datapath' could not be found during restore
+ERROR: [VRFC 10-3032] 'xil_defaultlib.project_reti_logiche' failed to restore
+WARNING: [VRFC 10-4940] 'project_reti_logiche' remains a black box since it has no binding entity [C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd:47]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit project_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2568.062 ; gain = 121.434
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-26] write_vhdl -mode funcsim -nolib -force -file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/project_tb_func_synth.vhd"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/project_tb_func_synth.vhd
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/project_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_16_bit'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim'
+"xelab -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_func_synth xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f544b6000f904c00a8e2ec4a71f15e13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_func_synth xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3006] 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/xsim.dir/xil_defaultlib/datapath.vdb' needs to be re-saved since 'xil_defaultlib.counter_16_bit' changed
+ERROR: [VRFC 10-3032] 'xil_defaultlib.datapath' failed to restore
+ERROR: [VRFC 10-213] Registering Dependencies Error: The primary unit 'datapath' could not be found during restore
+ERROR: [VRFC 10-3032] 'xil_defaultlib.project_reti_logiche' failed to restore
+ERROR: [VRFC 10-3006] 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/xsim.dir/xil_defaultlib/datapath.vdb' needs to be re-saved since 'xil_defaultlib.counter_16_bit' changed
+ERROR: [VRFC 10-3032] 'xil_defaultlib.datapath' failed to restore
+ERROR: [VRFC 10-213] Registering Dependencies Error: The primary unit 'datapath' could not be found during restore
+ERROR: [VRFC 10-3032] 'xil_defaultlib.project_reti_logiche' failed to restore
+ERROR: [VRFC 10-3006] 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/xsim.dir/xil_defaultlib/datapath.vdb' needs to be re-saved since 'xil_defaultlib.counter_16_bit' changed
+ERROR: [VRFC 10-3032] 'xil_defaultlib.datapath' failed to restore
+ERROR: [VRFC 10-213] Registering Dependencies Error: The primary unit 'datapath' could not be found during restore
+ERROR: [VRFC 10-3032] 'xil_defaultlib.project_reti_logiche' failed to restore
+WARNING: [VRFC 10-4940] 'project_reti_logiche' remains a black box since it has no binding entity [C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/Generatore test/multipleTests.vhd:47]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit project_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 15 17:44:10 2021...
