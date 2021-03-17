@@ -17,12 +17,8 @@ entity datapath is
         max_value_load : in STD_LOGIC;
         min_value_sel : in STD_LOGIC;
         min_value_load : in STD_LOGIC;
-        temp_value_load : in STD_LOGIC;
-        shift_level_load : in STD_LOGIC;
-        shift_counter_rst : in STD_LOGIC;
-        shift_counter_en : in STD_LOGIC;
+        shift_mult_load : in STD_LOGIC;
         pixel_counter_end : out STD_LOGIC;
-        shift_counter_end : out STD_LOGIC;
         o_address : out STD_LOGIC_VECTOR(15 downto 0);
         o_data : out STD_LOGIC_VECTOR(7 downto 0)
     );
@@ -30,15 +26,15 @@ end datapath;
 
 architecture Behavioral of datapath is
 	
-    component reg_4_bit is
+    component reg_9_bit is
     	port (
         	i_clk : in STD_LOGIC;
             i_rst : in STD_LOGIC;
             i_load : in STD_LOGIC;
-            i_data : in STD_LOGIC_VECTOR(3 downto 0);
-            o_data : out STD_LOGIC_VECTOR(3 downto 0)
+            i_data : in STD_LOGIC_VECTOR(8 downto 0);
+            o_data : out STD_LOGIC_VECTOR(8 downto 0)
         );
-    end component reg_4_bit;
+    end component reg_9_bit;
     
     component reg_8_bit is
     	port (
@@ -70,16 +66,6 @@ architecture Behavioral of datapath is
         );
     end component reg_16_bit;
 	
-	component reg_sll_8_bit is
-	  Port ( 
-		i_clk : in STD_LOGIC;
-		i_rst : in STD_LOGIC;
-		i_load : in STD_LOGIC;
-		i_data : in STD_LOGIC_VECTOR(7 downto 0);
-		o_data : out STD_LOGIC_VECTOR(7 downto 0)
-	  );
-	end component reg_sll_8_bit;
-	
 	component mux_2_1_8_bit is
 	  Port (
 		i_sel : in STD_LOGIC;
@@ -95,19 +81,10 @@ architecture Behavioral of datapath is
 		i_data_00 : in STD_LOGIC_VECTOR(15 downto 0);
 		i_data_01 : in STD_LOGIC_VECTOR(15 downto 0);
 		i_data_10 : in STD_LOGIC_VECTOR(15 downto 0);
-		i_data_11 : in STD_LOGIC_VECTOR(15 downto 0);
+        i_data_11 : in STD_LOGIC_VECTOR(15 downto 0);
 		o_data : out STD_LOGIC_VECTOR(15 downto 0)
 	  );
 	end component mux_4_1_16_bit;
-	
-	component counter_4_bit is
-	  Port (
-		i_clk : in STD_LOGIC;
-		i_rst : in STD_LOGIC;
-		i_en : in STD_LOGIC;
-		o_data : out STD_LOGIC_VECTOR(3 downto 0)
-	  );
-	end component counter_4_bit;
 	
 	component counter_16_bit is
 	  Port (
@@ -122,8 +99,6 @@ architecture Behavioral of datapath is
     signal size_prod : STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
     signal size : STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
     signal pixel_count : STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
-    --constant address_00 : STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
-    --constant address_01 : STD_LOGIC_VECTOR(15 downto 0) := "0000000000000001";
     signal address_10 : STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
     signal address_11 : STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
     signal max_comp_in : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
@@ -133,11 +108,9 @@ architecture Behavioral of datapath is
 	signal min_comp_out : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
     signal min_value : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
     signal delta_value : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
-	signal shift_level_calc_out: STD_LOGIC_VECTOR(3 downto 0) := "0000";
-    signal shift_level : STD_LOGIC_VECTOR(3 downto 0) := "0000";
-	signal shift_count : STD_LOGIC_VECTOR(3 downto 0) := "0000";
-	signal temp_value_sub : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
-	-- signal temp_value : STD_LOGIC_VECTOR(8 downto 0) := "000000000";
+	signal shift_mult_calc_out: STD_LOGIC_VECTOR(8 downto 0) := "000000000";
+    signal shift_mult : STD_LOGIC_VECTOR(8 downto 0) := "000000000";
+	signal temp_value : STD_LOGIC_VECTOR(16 downto 0) := "00000000000000000";
 
 begin
 	
@@ -203,58 +176,41 @@ begin
 	
 	delta_value <= max_value - min_value;
 	
-	SHIFT_LEVEL_CALC : process(delta_value)
+	SHIFT_MULT_CALC : process(delta_value)
     begin 
         if (delta_value = "00000000") then
-            shift_level_calc_out <= "1000";
+            shift_mult_calc_out <= "100000000";
         elsif ("00000000" < delta_value and delta_value < "00000011") then
-            shift_level_calc_out <= "0111";
+            shift_mult_calc_out <= "010000000";
         elsif ("00000010" < delta_value and delta_value < "00000111") then
-            shift_level_calc_out <= "0110";
+            shift_mult_calc_out <= "001000000";
         elsif ("00000110" < delta_value and delta_value < "00001111") then
-            shift_level_calc_out <= "0101";
+            shift_mult_calc_out <= "000100000";
         elsif ("00001110" < delta_value and delta_value < "00011111") then
-            shift_level_calc_out <= "0100";
+            shift_mult_calc_out <= "000010000";
         elsif ("00011110" < delta_value and delta_value < "00111111") then
-            shift_level_calc_out <= "0011";
+            shift_mult_calc_out <= "000001000";
         elsif ("00111110" < delta_value and delta_value < "01111111") then
-            shift_level_calc_out <= "0010";
+            shift_mult_calc_out <= "000000100";
         elsif ("01111110" < delta_value and delta_value < "11111111") then
-            shift_level_calc_out <= "0001";
+            shift_mult_calc_out <= "000000010";
         elsif (delta_value = "11111111") then
-            shift_level_calc_out <= "0000";
+            shift_mult_calc_out <= "000000001";
         else 
-            shift_level_calc_out <= "XXXX";
+            shift_mult_calc_out <= "XXXXXXXXX";
         end if;
     end process;
 	
-	SHIFT_LEVEL_REG : reg_4_bit port map(
+	SHIFT_MULT_REG : reg_9_bit port map(
 		i_clk => i_clk,
 		i_rst => i_rst,
-		i_load => shift_level_load,
-		i_data => shift_level_calc_out,
-		o_data => shift_level
+		i_load => shift_mult_load,
+		i_data => shift_mult_calc_out,
+		o_data => shift_mult
 	);
 	
-	SHIFT_COUNTER : counter_4_bit port map(
-		i_clk => i_clk,
-		i_rst => shift_counter_rst,
-		i_en => shift_counter_en,
-		o_data => shift_count
-	);
+	temp_value <= (i_data - min_value) * shift_mult;
 	
-	shift_counter_end <= '1' when shift_count = shift_level else '0';
-	
-	temp_value_sub <= i_data - min_value;
-	
-	TEMP_VALUE_REG : reg_sll_8_bit port map(
-		i_clk => i_clk,
-		i_rst => i_rst,
-		i_load => temp_value_load,
-		i_data => temp_value_sub,
-		o_data => o_data
-	);
-	
-	
+	o_data <= temp_value(7 downto 0) when temp_value <= "00000000011111111" else "11111111";
 	
 end Behavioral;

@@ -53,12 +53,8 @@ architecture Behavioral of project_reti_logiche is
             max_value_load : in STD_LOGIC;
             min_value_sel : in STD_LOGIC;
             min_value_load : in STD_LOGIC;
-            temp_value_load : in STD_LOGIC;
-            shift_level_load : in STD_LOGIC;
-            shift_counter_rst : in STD_LOGIC;
-            shift_counter_en : in STD_LOGIC;
+            shift_mult_load : in STD_LOGIC;
             pixel_counter_end : out STD_LOGIC;
-            shift_counter_end : out STD_LOGIC;
             o_address : out STD_LOGIC_VECTOR(15 downto 0);
             o_data : out STD_LOGIC_VECTOR(7 downto 0)
         );
@@ -73,12 +69,8 @@ architecture Behavioral of project_reti_logiche is
     signal max_value_load : STD_LOGIC := '0';
     signal min_value_sel : STD_LOGIC := '0';
     signal min_value_load : STD_LOGIC := '0';
-    signal temp_value_load : STD_LOGIC := '0';
-    signal shift_level_load : STD_LOGIC := '0';
-    signal shift_counter_rst : STD_LOGIC := '0';
-    signal shift_counter_en : STD_LOGIC := '0';
+    signal shift_mult_load : STD_LOGIC := '0';
     signal pixel_counter_end : STD_LOGIC := '0';
-    signal shift_counter_end : STD_LOGIC := '0';
     
     type STATE_TYPE is (
         RST,	-- Stato di reset della macchina
@@ -90,8 +82,6 @@ architecture Behavioral of project_reti_logiche is
         COMP_EXT,
         CALC_SHIFT,
         INIT_CALC,
-        INIT_SHIFT,
-        SHIFT_BIT,
         WRITE_NEW,
         REQ_PIXEL,
         DONE	
@@ -116,12 +106,8 @@ begin
        max_value_load=> max_value_load,
        min_value_sel=> min_value_sel,
        min_value_load=> min_value_load,
-       temp_value_load=> temp_value_load,
-       shift_level_load=> shift_level_load,
-       shift_counter_rst=> shift_counter_rst,
-       shift_counter_en=> shift_counter_en,
-       pixel_counter_end => pixel_counter_end, 
-       shift_counter_end => shift_counter_end 
+       shift_mult_load=> shift_mult_load,
+       pixel_counter_end => pixel_counter_end
 	);
 	
 	-- Processo state per la memorizzazione dello stato corrente
@@ -137,7 +123,7 @@ begin
 	end process;
 	
 	-- Processo delta per la memorizzazione dello stato prossimo
-	delta : process(cur_state, i_start, pixel_counter_end, shift_counter_end)
+	delta : process(cur_state, i_start, pixel_counter_end)
 	begin
 		next_state <= cur_state;
 		case cur_state is
@@ -168,32 +154,19 @@ begin
 				next_state <= INIT_CALC;
 			when INIT_CALC =>
 				if(pixel_counter_end = '0') then
-					next_state <= INIT_SHIFT;
-				end if;
-				if(pixel_counter_end = '1') then
-					next_state <= DONE;
-				end if;
-			when INIT_SHIFT =>
-				if(shift_counter_end = '0') then
-					next_state <= SHIFT_BIT;
-				elsif(shift_counter_end = '1') then
 					next_state <= WRITE_NEW;
 				end if;
-            when SHIFT_BIT => 
-                if (shift_counter_end = '1') then
-                    next_state <= WRITE_NEW;
-                elsif (shift_counter_end = '0') then
-                    next_state <= SHIFT_BIT;
-                end if;
-			when WRITE_NEW =>
-				next_state <= REQ_PIXEL;
-			when REQ_PIXEL =>
 				if(pixel_counter_end = '1') then
 					next_state <= DONE;
 				end if;
-				if(pixel_counter_end = '0') then
-					next_state <= INIT_SHIFT;
+			when WRITE_NEW =>
+				if (pixel_counter_end = '0') then
+				    next_state <= REQ_PIXEL;
+                elsif (pixel_counter_end = '1') then
+                    next_state <= DONE;
                 end if;
+ 			when REQ_PIXEL =>
+                next_state <= WRITE_NEW;
 			when DONE =>
 				if(i_start = '0') then
 					next_state <= RST;
@@ -216,10 +189,7 @@ begin
 		max_value_load <= '0';
 		min_value_sel <= '0';
 		min_value_load <= '0';
-		shift_level_load <= '0';
-		shift_counter_rst <= '0';
-		shift_counter_en <= '0';
-		temp_value_load <= '0';
+		shift_mult_load <= '0';
 		
 		case cur_state is
             when RST =>
@@ -229,8 +199,6 @@ begin
                 min_value_load <= '1';
                 pixel_counter_rst <= '1';
                 pixel_counter_en <= '1';
-                shift_counter_rst <= '1';
-                shift_counter_en <= '1';
             when REQ_N_COL =>
                 o_en <= '1';
                 o_we <= '0';
@@ -263,29 +231,18 @@ begin
                 pixel_counter_en <='1';
                 address_sel <= "10";
             when CALC_SHIFT =>
-                shift_level_load <= '1';
+                shift_mult_load <= '1';
                 pixel_counter_rst <= '1';
                 pixel_counter_en <= '1';
             when INIT_CALC =>
                 pixel_counter_rst <= '0';
                 pixel_counter_en <= '1';
                 address_sel <= "10";
-                --shift_counter_rst <= '1';
-                --shift_counter_en <= '1';
-            when INIT_SHIFT =>
-                shift_counter_en <= '1';
-                temp_value_load <= '1';
-            when SHIFT_BIT =>
-                o_en <= '0';
-                shift_counter_en <= '1';
             when WRITE_NEW =>
                 o_we <= '1';
                 address_sel <= "11";
-                shift_counter_en <= '1';
             when REQ_PIXEL =>
                 address_sel <= "10";
-                shift_counter_rst <= '1';
-                shift_counter_en <= '1';
                 pixel_counter_en <= '1';
             when DONE =>
                 o_en <= '0';
