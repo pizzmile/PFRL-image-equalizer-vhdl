@@ -10,8 +10,8 @@ def findAll(source, value):
     return indexes
 
 
-def analyzeTest():
-    with open('test1.txt') as file:
+def analyzeTest(test_filename, not_passed_filename):
+    with open(test_filename) as file:
         src = file.readlines()
     src = [s[:-1] for s in src if s != '\n']
 
@@ -73,7 +73,7 @@ def analyzeTest():
             # 'solution': solution,
         })
 
-    with open('ramNotPassed.txt') as file:
+    with open(test_filename, not_passed_filename) as file:
         src = file.readlines()
     src = [s[:-1].replace('TEST ', '').split(':') for s in src if s != '\n']
 
@@ -91,15 +91,22 @@ def analyzeTest():
     test_json['failed'] += failed_count
     print(test_json['count'])
 
-    with open('analysis.json', 'w') as outfile:
+    with open(f'analysis_{test_filename}.json', 'w') as outfile:
         json.dump(test_json, outfile, indent=2)
 
 
 
 
 
-def analyzeNotPassed(filename):
-    pass
+name_range = input("Select test's range indexes:\n(Format IDX1-IDX2)\n")
+name_range_int = [int(i) for i in name_range.split('-')]
 
+for i in range(name_range_int[0], name_range_int[1]+1):
+    try:
+        test_filename = f'{i}_test.txt'
+        not_passed_filename = f'{i}_not_passed.txt'
+        analyzeTest(test_filename, not_passed_filename)
+    except:
+        pass
 
-analyzeTest()
+print('Done!')
