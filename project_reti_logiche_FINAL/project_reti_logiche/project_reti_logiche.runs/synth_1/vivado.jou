@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar 24 19:19:13 2021
+# Process ID: 2928
+# Current directory: E:/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_FINAL/project_reti_logiche/project_reti_logiche.runs/synth_1
+# Command line: vivado.exe -log project_reti_logiche.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source project_reti_logiche.tcl
+# Log file: E:/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_FINAL/project_reti_logiche/project_reti_logiche.runs/synth_1/project_reti_logiche.vds
+# Journal file: E:/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_FINAL/project_reti_logiche/project_reti_logiche.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source project_reti_logiche.tcl -notrace

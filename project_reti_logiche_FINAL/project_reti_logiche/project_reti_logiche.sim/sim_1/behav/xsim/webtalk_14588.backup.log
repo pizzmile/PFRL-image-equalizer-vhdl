@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar 24 19:15:57 2021
+# Process ID: 14588
+# Current directory: E:/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_FINAL/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source E:/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_FINAL/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim/xsim.dir/project_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_FINAL/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: E:/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_FINAL/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_FINAL/project_reti_logiche/project_reti_logiche.sim/sim_1/behav/xsim/xsim.dir/project_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 98.812 ; gain = 0.000
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar 24 19:16:19 2021...
