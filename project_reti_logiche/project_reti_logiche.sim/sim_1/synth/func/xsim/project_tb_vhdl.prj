@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"project_tb_func_synth.vhd" \
-"../../../../../../Testbench/TB_Salice/TB5/test_finale.vhd" \
-
-# Do not sort compile order
-nosort

@@ -1,0 +1,25 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Note: TEST 1
+Time: 230 ns  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
+Note: TEST 2
+Time: 737867600 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
+Note: TEST 3
+Time: 1475507600 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
+Note: TEST 4
+Time: 2213147600 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
+Note: TEST 5
+Time: 2950787600 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
+Note: TEST 6
+Time: 3688427600 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
+Note: TEST 7
+Time: 4426067600 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
+Note: TEST 8
+Time: 5163707600 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
+Note: TEST 9
+Time: 5901347600 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
+Note: TEST 10
+Time: 6638987600 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
+Failure: Simulation Ended!
+Time: 7376627600 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
+$finish called at time : 7376627600 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd" Line 155
