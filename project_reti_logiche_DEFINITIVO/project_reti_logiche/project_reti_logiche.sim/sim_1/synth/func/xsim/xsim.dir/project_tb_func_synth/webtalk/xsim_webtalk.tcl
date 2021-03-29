@@ -1,6 +1,6 @@
-webtalk_init -webtalk_dir C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/xsim.dir/project_tb_func_synth/webtalk/
+webtalk_init -webtalk_dir C:/Users/andre/Desktop/BAKUP_RL_SERIO/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/xsim.dir/project_tb_func_synth/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Fri Mar 26 18:40:57 2021" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Mon Mar 29 18:34:15 2021" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2020.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "3064766" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "73d17331-bb3c-40ba-b06b-46f4bd90dae1" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "54eeace331c64dd4bdbcfcc0736b22ac" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "50" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "181" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz" -context "user_environment"
@@ -22,12 +22,11 @@ webtalk_add_data -client project -key cpu_speed -value "2592 MHz" -context "user
 webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
 webtalk_add_data -client project -key system_ram -value "34.000 GB" -context "user_environment"
 webtalk_register_client -client xsim
-webtalk_add_data -client xsim -key runall -value "true" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "7376627600 ps" -context "xsim\\usage"
+webtalk_add_data -client xsim -key runtime -value "827600 ps" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "75.65_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "19948_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 3435344364 -regid "" -xml C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/xsim.dir/project_tb_func_synth/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/xsim.dir/project_tb_func_synth/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/xsim.dir/project_tb_func_synth/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.11_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "12492_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 155398165 -regid "" -xml C:/Users/andre/Desktop/BAKUP_RL_SERIO/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/xsim.dir/project_tb_func_synth/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/andre/Desktop/BAKUP_RL_SERIO/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/xsim.dir/project_tb_func_synth/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/andre/Desktop/BAKUP_RL_SERIO/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/xsim.dir/project_tb_func_synth/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

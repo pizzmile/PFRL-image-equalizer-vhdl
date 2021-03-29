@@ -1,7 +1,7 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
 "project_tb_func_synth.vhd" \
-"../../../../../../../Testbench/test_privati/multipleTests.vhd" \
+"../../../../../../../../../../Downloads/tb_2x2.vhd" \
 
 # Do not sort compile order
 nosort

@@ -1,0 +1,628 @@
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2020.2 (64-bit)
+# SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Current time: Sun Mar 28 23:42:59 CEST 2021
+# Process ID (PID): 16076
+# User: andre
+# OS: Windows 10
+# Project: project_reti_logiche
+# Part: xc7a200tfbg484-1
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+Sun Mar 28 23:42:59 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI.calculateTabWidth(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$TabbedPaneScrollLayout.calculateTabRects(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$TabbedPaneLayout.calculateLayoutInfo(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$TabbedPaneScrollLayout.layoutContainer(Unknown Source)
+	at ui.utils.lnf.HSyntheticaJideTabbedPaneUI$HSyntheticaTabbedPanelScrollLayout.layoutContainer(SourceFile:1104)
+	at java.desktop/java.awt.Container.layout(Container.java:1537)
+	at java.desktop/java.awt.Container.doLayout(Container.java:1526)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1722)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validate(Container.java:1657)
+	at java.desktop/javax.swing.JViewport.validateView(JViewport.java:492)
+	at java.desktop/javax.swing.JViewport.scrollRectToVisible(JViewport.java:403)
+	at java.desktop/javax.swing.JComponent.scrollRectToVisible(JComponent.java:3133)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$ScrollableTabPanel.scrollRectToVisible(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$ScrollableTabPanel.scrollIndexToVisible(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI.ensureActiveTabIsVisible(Unknown Source)
+	at com.jidesoft.swing.JideTabbedPane.scrollSelectedTabToVisible(Unknown Source)
+	at ui.views.Q.aB.T(SourceFile:356)
+	at ui.views.Q.aB.update(SourceFile:646)
+	at ui.views.Q.u.kdP(SourceFile:2596)
+	at ui.bo.aIL(SourceFile:2023)
+	at ui.bo.aLD(SourceFile:1970)
+	at ui.bo.aIK(SourceFile:1939)
+	at ui.views.U.D.documentComponentDeactivated(SourceFile:2365)
+	at com.jidesoft.document.DocumentComponent.a(Unknown Source)
+	at com.jidesoft.document.DocumentPane.b(Unknown Source)
+	at com.jidesoft.document.DocumentPane.setActiveDocument(Unknown Source)
+	at com.jidesoft.document.DocumentPane.setActiveDocument(Unknown Source)
+	at com.jidesoft.document.DocumentPane.stateChanged(Unknown Source)
+	at java.desktop/javax.swing.DefaultSingleSelectionModel.fireStateChanged(DefaultSingleSelectionModel.java:143)
+	at com.jidesoft.swing.JideTabbedPane$IgnoreableSingleSelectionModel.fireStateChanged(Unknown Source)
+	at java.desktop/javax.swing.DefaultSingleSelectionModel.setSelectedIndex(DefaultSingleSelectionModel.java:74)
+	at java.desktop/javax.swing.JTabbedPane.setSelectedIndexImpl(JTabbedPane.java:622)
+	at java.desktop/javax.swing.JTabbedPane.removeTabAt(JTabbedPane.java:986)
+	at com.jidesoft.swing.JideTabbedPane.removeTabAt(Unknown Source)
+	at java.desktop/javax.swing.JTabbedPane.remove(JTabbedPane.java:1033)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1118)
+	at java.desktop/javax.swing.JTabbedPane.insertTab(JTabbedPane.java:730)
+	at com.jidesoft.swing.JideTabbedPane.insertTab(Unknown Source)
+	at java.desktop/javax.swing.JTabbedPane.addTab(JTabbedPane.java:773)
+	at com.jidesoft.document.TdiGroup.addDocument(Unknown Source)
+	at com.jidesoft.document.DocumentPane.a(Unknown Source)
+	at com.jidesoft.document.DocumentPane.openDocument(Unknown Source)
+	at com.jidesoft.document.DocumentPane.openDocument(Unknown Source)
+	at ui.views.h.hnc(SourceFile:354)
+	at ui.views.cO.hnc(SourceFile:411)
+	at ui.views.R.iGi(SourceFile:792)
+	at ui.views.R.t(SourceFile:713)
+	at ui.views.Q.u.al(SourceFile:1140)
+	at ui.views.Q.u.o(SourceFile:1072)
+	at ui.views.Q.W.B(SourceFile:111)
+	at ui.views.Q.R.K(SourceFile:324)
+	at ui.views.Q.R.handleTclEvent(SourceFile:255)
+	at ui.frmwork.a.o.c(SourceFile:42)
+	at ui.frmwork.E.i(SourceFile:253)
+	at ui.frmwork.E.dQ(SourceFile:336)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:303)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
+	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:117)
+	at java.desktop/java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+	at java.desktop/java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+	at java.desktop/java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.desktop/java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+	at java.desktop/java.awt.Dialog.show(Dialog.java:1070)
+	at java.desktop/java.awt.Component.show(Component.java:1716)
+	at java.desktop/java.awt.Component.setVisible(Component.java:1663)
+	at java.desktop/java.awt.Window.setVisible(Window.java:1031)
+	at java.desktop/java.awt.Dialog.setVisible(Dialog.java:1005)
+	at ui.utils.swing.A.setVisible(SourceFile:396)
+	at ui.utils.swing.u.a(SourceFile:316)
+	at ui.utils.swing.u.a(SourceFile:185)
+	at ui.cw.j(SourceFile:100)
+	at ui.cy.l(SourceFile:80)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
+	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+Sun Mar 28 23:42:59 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI.calculateTabWidth(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$TabbedPaneScrollLayout.calculateTabRects(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$TabbedPaneLayout.calculateLayoutInfo(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$TabbedPaneScrollLayout.layoutContainer(Unknown Source)
+	at ui.utils.lnf.HSyntheticaJideTabbedPaneUI$HSyntheticaTabbedPanelScrollLayout.layoutContainer(SourceFile:1104)
+	at java.desktop/java.awt.Container.layout(Container.java:1537)
+	at java.desktop/java.awt.Container.doLayout(Container.java:1526)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1722)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validate(Container.java:1657)
+	at java.desktop/javax.swing.RepaintManager$3.run(RepaintManager.java:745)
+	at java.desktop/javax.swing.RepaintManager$3.run(RepaintManager.java:743)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/javax.swing.RepaintManager.validateInvalidComponents(RepaintManager.java:742)
+	at java.desktop/javax.swing.RepaintManager$ProcessingRunnable.run(RepaintManager.java:1889)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
+	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:117)
+	at java.desktop/java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+	at java.desktop/java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+	at java.desktop/java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.desktop/java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+	at java.desktop/java.awt.Dialog.show(Dialog.java:1070)
+	at java.desktop/java.awt.Component.show(Component.java:1716)
+	at java.desktop/java.awt.Component.setVisible(Component.java:1663)
+	at java.desktop/java.awt.Window.setVisible(Window.java:1031)
+	at java.desktop/java.awt.Dialog.setVisible(Dialog.java:1005)
+	at ui.utils.swing.A.setVisible(SourceFile:396)
+	at ui.utils.swing.u.a(SourceFile:316)
+	at ui.utils.swing.u.a(SourceFile:185)
+	at ui.cw.j(SourceFile:100)
+	at ui.cy.l(SourceFile:80)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
+	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+Sun Mar 28 23:42:59 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI.calculateTabWidth(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$TabbedPaneScrollLayout.calculateTabRects(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$TabbedPaneLayout.calculateLayoutInfo(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$TabbedPaneScrollLayout.layoutContainer(Unknown Source)
+	at ui.utils.lnf.HSyntheticaJideTabbedPaneUI$HSyntheticaTabbedPanelScrollLayout.layoutContainer(SourceFile:1104)
+	at java.desktop/java.awt.Container.layout(Container.java:1537)
+	at java.desktop/java.awt.Container.doLayout(Container.java:1526)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1722)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validate(Container.java:1657)
+	at java.desktop/javax.swing.JViewport.validateView(JViewport.java:492)
+	at java.desktop/javax.swing.JViewport.scrollRectToVisible(JViewport.java:403)
+	at java.desktop/javax.swing.JComponent.scrollRectToVisible(JComponent.java:3133)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$ScrollableTabPanel.scrollRectToVisible(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$ScrollableTabPanel.scrollIndexToVisible(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI.ensureActiveTabIsVisible(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$ComponentHandler.componentResized(Unknown Source)
+	at java.desktop/java.awt.Component.processComponentEvent(Component.java:6458)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6412)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5008)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4840)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:117)
+	at java.desktop/java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+	at java.desktop/java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+	at java.desktop/java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.desktop/java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+	at java.desktop/java.awt.Dialog.show(Dialog.java:1070)
+	at java.desktop/java.awt.Component.show(Component.java:1716)
+	at java.desktop/java.awt.Component.setVisible(Component.java:1663)
+	at java.desktop/java.awt.Window.setVisible(Window.java:1031)
+	at java.desktop/java.awt.Dialog.setVisible(Dialog.java:1005)
+	at ui.utils.swing.A.setVisible(SourceFile:396)
+	at ui.utils.swing.u.a(SourceFile:316)
+	at ui.utils.swing.u.a(SourceFile:185)
+	at ui.cw.j(SourceFile:100)
+	at ui.cy.l(SourceFile:80)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
+	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+Sun Mar 28 23:42:59 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI.calculateTabWidth(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$TabbedPaneScrollLayout.calculateTabRects(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$TabbedPaneLayout.calculateLayoutInfo(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$TabbedPaneScrollLayout.layoutContainer(Unknown Source)
+	at ui.utils.lnf.HSyntheticaJideTabbedPaneUI$HSyntheticaTabbedPanelScrollLayout.layoutContainer(SourceFile:1104)
+	at java.desktop/java.awt.Container.layout(Container.java:1537)
+	at java.desktop/java.awt.Container.doLayout(Container.java:1526)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1722)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validateTree(Container.java:1731)
+	at java.desktop/java.awt.Container.validate(Container.java:1657)
+	at java.desktop/javax.swing.JViewport.validateView(JViewport.java:492)
+	at java.desktop/javax.swing.JViewport.scrollRectToVisible(JViewport.java:403)
+	at java.desktop/javax.swing.JComponent.scrollRectToVisible(JComponent.java:3133)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$ScrollableTabPanel.scrollRectToVisible(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$ScrollableTabPanel.scrollIndexToVisible(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI.ensureActiveTabIsVisible(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$ComponentHandler.componentResized(Unknown Source)
+	at java.desktop/java.awt.AWTEventMulticaster.componentResized(AWTEventMulticaster.java:168)
+	at java.desktop/java.awt.AWTEventMulticaster.componentResized(AWTEventMulticaster.java:167)
+	at java.desktop/java.awt.AWTEventMulticaster.componentResized(AWTEventMulticaster.java:167)
+	at java.desktop/java.awt.Component.processComponentEvent(Component.java:6458)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6412)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5008)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4840)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+Sun Mar 28 23:42:59 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:42:59 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:42:59 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:42:59 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:42:59 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:42:59 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:42:59 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:00 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:00 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:00 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:00 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:00 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:00 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:00 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:02 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:02 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:03 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:03 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:03 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:06 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:06 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:06 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:06 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:06 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:06 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:07 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:07 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:08 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:08 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:09 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:09 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:09 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:09 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:09 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:10 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:10 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:11 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:11 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:11 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:11 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:11 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:12 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:12 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:12 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:12 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:12 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:12 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:12 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:12 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:13 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:14 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:14 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:14 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:14 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:14 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:14 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:15 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:18 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:18 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:18 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:18 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:18 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:18 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:20 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:21 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:21 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:21 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:24 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:29 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+
+Sun Mar 28 23:43:30 CEST 2021
+java.lang.ArrayIndexOutOfBoundsException
+

@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.runs/impl_1/project_reti_logiche.tcl"
+  variable script "C:/Users/andre/Desktop/BAKUP_RL_SERIO/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.runs/impl_1/project_reti_logiche.tcl"
   variable category "vivado_impl"
 }
 
@@ -129,15 +129,15 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.cache/wt [current_project]
-  set_property parent.project_path C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.xpr [current_project]
-  set_property ip_output_repo C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/andre/Desktop/BAKUP_RL_SERIO/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.cache/wt [current_project]
+  set_property parent.project_path C:/Users/andre/Desktop/BAKUP_RL_SERIO/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.xpr [current_project]
+  set_property ip_output_repo C:/Users/andre/Desktop/BAKUP_RL_SERIO/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.runs/synth_1/project_reti_logiche.dcp
+  add_files -quiet C:/Users/andre/Desktop/BAKUP_RL_SERIO/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.runs/synth_1/project_reti_logiche.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.srcs/constrs_1/new/clock.xdc
+  read_xdc C:/Users/andre/Desktop/BAKUP_RL_SERIO/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.srcs/constrs_1/new/clock.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

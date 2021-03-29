@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.runs/synth_1'
+HD_PWD='C:/Users/andre/Desktop/BAKUP_RL_SERIO/PFRL_pizzamiglio_prisciantelli/project_reti_logiche_DEFINITIVO/project_reti_logiche/project_reti_logiche.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

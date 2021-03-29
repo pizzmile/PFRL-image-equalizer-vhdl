@@ -1,25 +1,5 @@
 Vivado Simulator 2020.2
 Time resolution is 1 ps
-Note: TEST 1
-Time: 230 ns  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
-Note: TEST 2
-Time: 602500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
-Note: TEST 3
-Time: 977500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
-Note: TEST 4
-Time: 1352500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
-Note: TEST 5
-Time: 1727500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
-Note: TEST 6
-Time: 2102500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
-Note: TEST 7
-Time: 2477500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
-Note: TEST 8
-Time: 2852500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
-Note: TEST 9
-Time: 3227500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
-Note: TEST 10
-Time: 3602500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
-Failure: Simulation Ended!
-Time: 3977500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd
-$finish called at time : 3977500 ps : File "C:/Users/andre/Documents/GitHub/PFRL_pizzamiglio_prisciantelli/Testbench/test_privati/multipleTests.vhd" Line 155
+Failure:  Simulation Ended! TEST PASSATO 
+Time: 22082500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/andre/Desktop/BAKUP_RL_SERIO/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/TB5/test_finale.vhd
+$finish called at time : 22082500 ps : File "C:/Users/andre/Desktop/BAKUP_RL_SERIO/PFRL_pizzamiglio_prisciantelli/Testbench/TB_Salice/TB5/test_finale.vhd" Line 1147

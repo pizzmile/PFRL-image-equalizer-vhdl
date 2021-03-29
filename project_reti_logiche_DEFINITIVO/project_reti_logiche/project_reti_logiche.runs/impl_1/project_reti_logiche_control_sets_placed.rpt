@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Fri Mar 26 18:18:19 2021
+| Date         : Mon Mar 29 13:04:32 2021
 | Host         : DESKTOP-D7FT5L0 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file project_reti_logiche_control_sets_placed.rpt
 | Design       : project_reti_logiche
@@ -43,9 +43,9 @@ Table of Contents
 | >= 0 to < 4        |     0 |
 | >= 4 to < 6        |     0 |
 | >= 6 to < 8        |     0 |
-| >= 8 to < 10       |     2 |
-| >= 10 to < 12      |     0 |
-| >= 12 to < 14      |     1 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
 | >= 16              |     3 |
 +--------------------+-------+
@@ -62,23 +62,23 @@ Table of Contents
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              65 |           20 |
-| Yes          | Yes                   | No                     |              12 |            4 |
+| Yes          | No                    | Yes                    |              66 |           18 |
+| Yes          | Yes                   | No                     |              11 |            4 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------+------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
-|   Clock Signal   |               Enable Signal              |              Set/Reset Signal             | Slice Load Count | Bel Load Count | Bels / Slice |
-+------------------+------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
-|  i_clk_IBUF_BUFG | n_col_load                               | reg_rst                                   |                4 |              8 |         2.00 |
-|  i_clk_IBUF_BUFG | shift_mult_load                          | reg_rst                                   |                2 |              9 |         4.50 |
-|  i_clk_IBUF_BUFG | DATAPATH0/E[0]                           | i_rst_IBUF                                |                4 |             12 |         3.00 |
-|  i_clk_IBUF_BUFG | max_value_load                           | reg_rst                                   |                4 |             16 |         4.00 |
-|  i_clk_IBUF_BUFG | size_load                                | reg_rst                                   |                6 |             16 |         2.67 |
-|  i_clk_IBUF_BUFG | DATAPATH0/PIXEL_COUNTER/pixel_counter_en | DATAPATH0/PIXEL_COUNTER/pixel_counter_rst |                4 |             16 |         4.00 |
-+------------------+------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
++------------------+----------------------------------+-------------------------------+------------------+----------------+--------------+
+|   Clock Signal   |           Enable Signal          |        Set/Reset Signal       | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------+----------------------------------+-------------------------------+------------------+----------------+--------------+
+|  i_clk_IBUF_BUFG | n_col_load                       | reg_rst                       |                3 |              8 |         2.67 |
+|  i_clk_IBUF_BUFG | shift_mult_load                  | reg_rst                       |                3 |             10 |         3.33 |
+|  i_clk_IBUF_BUFG | FSM_onehot_cur_state[10]_i_1_n_0 | i_rst_IBUF                    |                4 |             11 |         2.75 |
+|  i_clk_IBUF_BUFG | max_value_load                   | reg_rst                       |                2 |             16 |         8.00 |
+|  i_clk_IBUF_BUFG | size_load                        | reg_rst                       |                6 |             16 |         2.67 |
+|  i_clk_IBUF_BUFG | DATAPATH0/counter/counter_en     | DATAPATH0/counter/counter_rst |                4 |             16 |         4.00 |
++------------------+----------------------------------+-------------------------------+------------------+----------------+--------------+
 
 
